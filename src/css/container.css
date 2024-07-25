@@ -1,0 +1,28 @@
+.container {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 169px;
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
