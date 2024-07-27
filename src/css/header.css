@@ -14,24 +14,23 @@
     align-items: center;
   }
   
-  .logo-link {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding: 8px 0;
-    transition: fill 250ms linear;
-  }
-  
   .logo-icon {
-    width: 16px;
-    height: 16px;
+    width: 80px;
+    height: 80px;
+    gap: 0px;
+    border-radius: 18px 0px 0px 0px;
+    opacity: 0px;    
   }
 
-  .header-menu-link {
-    background-color: #ED3B44 ;
+  .header-btn {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    transform: translateX(-50%); 
+    background-color: #ED3B44 ;        
   }
 
-  .header-menu-link:hover,
-  .header-menu-link:focus {
+ .header-btn:hover,
+ .header-btn:focus {
     background-color: #ED3B44;
   }
