@@ -120,7 +120,7 @@
 
 @media screen and (min-width: 1440px) {
     .reviews {
-        padding: 164px 16px;
+        padding: 164px 0;
     }
 
     .swiper-wrapper .reviews-items {
