@@ -1,0 +1,36 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+  }
+  
+  .header-nav-wrapper {
+    display: none;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    width: 80px;
+    height: 80px;
+    gap: 0px;
+    border-radius: 18px 0px 0px 0px;
+    opacity: 0px;    
+  }
+
+  .header-btn {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    transform: translateX(-50%); 
+    background-color: #ED3B44 ;        
+  }
+
+ .header-btn:hover,
+ .header-btn:focus {
+    background-color: #ED3B44;
+  }
