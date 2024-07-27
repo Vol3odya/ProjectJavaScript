@@ -61,7 +61,6 @@
     padding: 18px;
     width: 52px;
     height: 52px;
-<<<<<<< HEAD
     /*position: absolute;*/
     margin-top: 180px;
     /*top: calc(100% - 62px + 92px);/*calc(91% + 100px);*/
@@ -74,11 +73,6 @@
 
 .swiper-button-next:after {
     content: url("../img/reviews/arrow-narrow-right.svg");
-=======
-    position: absolute;
-    top: calc(51% + 250px);
-    transform: translateY(-50%);
->>>>>>> 86269ccfb852d83b656ee38a116ba33b2b1466ec
 }
 
 .swiper-button-prev {
@@ -136,15 +130,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-<<<<<<< HEAD
     /*.reviews {
         padding: 164px 16px;
     }*/
-=======
-    .reviews {
-        padding: 164px 0;
-    }
->>>>>>> 86269ccfb852d83b656ee38a116ba33b2b1466ec
 
     .swiper-wrapper .reviews-items {
         min-width: 332px;
@@ -157,11 +145,7 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-<<<<<<< HEAD
         margin-top: 190px;
-=======
-        top: calc(50% + 190px);
->>>>>>> 86269ccfb852d83b656ee38a116ba33b2b1466ec
     }
 
 }
