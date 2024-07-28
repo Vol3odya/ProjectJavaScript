@@ -122,14 +122,8 @@
 
 @media screen and (min-width: 1440px) {
     .reviews {
-        padding: 164px 16px;
+        padding: 164px 0;
     }
-
-    .swiper-wrapper .reviews-items {
-        min-width: 332px;
-        min-height: 302px;
-    }
-
     .swiper-wrapper .review-text {
         min-width: 284px;
     }
