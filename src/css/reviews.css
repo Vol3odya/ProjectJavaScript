@@ -114,7 +114,7 @@
     }
  .swiper-button-prev,
  .swiper-button-next {
-     top: calc(51% + 275px);
+     margin-top: 190px;
  }
     .swiper-button-prev {
         left: calc(50% - 62px - 20px);
