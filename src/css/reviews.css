@@ -1,23 +1,9 @@
 .reviews {
-<<<<<<< Updated upstream
-    min-width: 320px;
-    min-height: 570px;
-=======
->>>>>>> Stashed changes
     padding: 64px 0;
     background-color: #1C1D20;
 }
 
-<<<<<<< Updated upstream
-.reviews-container {
-    margin: 0;
-}
-
-=======
->>>>>>> Stashed changes
 .swiper-wrapper .reviews-items {
-    min-width: 288px;
-    min-height: 302px;
     padding: 32px 24px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
@@ -67,12 +53,9 @@
     padding: 18px;
     width: 52px;
     height: 52px;
-<<<<<<< Updated upstream
     position: absolute;
     top: calc(51% + 250px);
     transform: translateY(-50%);
-=======
-    margin-top: 180px;
 }
 
 .swiper-button-prev:after {
@@ -81,7 +64,6 @@
 
 .swiper-button-next:after {
     content: url("../img/reviews/arrow-narrow-right.svg");
->>>>>>> Stashed changes
 }
 
 .swiper-button-prev {
@@ -110,23 +92,19 @@
 }
 
 @media screen and (min-width: 768px) {
-<<<<<<< Updated upstream
-    .reviews {
-        padding: 96px 16px;
-=======
-  reviews {
+  .reviews {
         padding: 96px 0;
->>>>>>> Stashed changes
     }
 
     .swiper-button-prev,
     .swiper-button-next {
         width: 68px;
         height: 68px;
+        margin-top: 190px;
     }
- .swiper-button-prev,
- .swiper-button-next {
-     top: calc(51% + 275px);
+    .swiper-button-prev,
+    .swiper-button-next {
+         margin-top: 190px;
  }
     .swiper-button-prev {
         left: calc(50% - 62px - 20px);
@@ -157,11 +135,7 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-<<<<<<< Updated upstream
         top: calc(50% + 190px);
-=======
-        margin-top: 140px;
->>>>>>> Stashed changes
     }
 
 }
