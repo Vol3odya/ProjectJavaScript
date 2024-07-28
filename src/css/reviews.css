@@ -74,6 +74,7 @@
     right: calc(50% - 52px - 6px);
 }
 
+
 :root {
     --swiper-navigation-size: 24px;
     --swiper-theme-color: #fafafa;
@@ -121,7 +122,7 @@
 
 @media screen and (min-width: 1440px) {
     .reviews {
-        padding: 164px 0;
+        padding: 164px 16px;
     }
 
     .swiper-wrapper .reviews-items {
