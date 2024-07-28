@@ -33,9 +33,7 @@ const fetchReviews = async () => {
 
 const initializeSlider = () => {
   const swiper = new Swiper('.swiper', {
-    //slidesPerView: 4,
-    //spaceBetween: 30,
-    navigation: {
+      navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
