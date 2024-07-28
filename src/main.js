@@ -1,1 +1,1 @@
-@import url('./js/reviews.js');
+
