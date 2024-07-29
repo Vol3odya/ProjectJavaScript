@@ -45,39 +45,35 @@
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
 }
+.reviews-wrap {
+    width: 156px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 32px;
+    position: relative;
+}
 
-.swiper-button-prev,
-.swiper-button-next {
+.review-button-prev,
+.review-button-next {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 18px;
     width: 52px;
     height: 52px;
-    position: absolute;
-    top: calc(51% + 250px);
-    transform: translateY(-50%);
+    margin-inline: 12px;
 }
 
-.swiper-button-prev:after {
+.review-button-prev:after {
     content: url("../img/reviews/arrow-narrow-left.svg");
 }
 
-.swiper-button-next:after {
+.review-button-next:after {
     content: url("../img/reviews/arrow-narrow-right.svg");
 }
-
-.swiper-button-prev {
-    left: calc(50% - 52px - 6px);
-}
-
-.swiper-button-next {
-    right: calc(50% - 52px - 6px);
-}
-
-
 :root {
     --swiper-navigation-size: 24px;
     --swiper-theme-color: #fafafa;
+    top:0;
 }
 
 @media screen and (min-width: 375px) {
@@ -97,25 +93,19 @@
         padding: 96px 0;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
+ .review-button-prev,
+ .review-button-next {
         width: 68px;
         height: 68px;
-        margin-top: 190px;
     }
-    .swiper-button-prev,
-    .swiper-button-next {
-     margin-top: 190px;
+  .review-button-prev {
+        margin-left: -10px;
     }
-    .swiper-button-prev {
-        left: calc(50% - 62px - 20px);
-    }
-
-    .swiper-button-next {
-        right: calc(50% - 62px - 20px);
-    }
-
-    :root {
+    
+    .review-button-next {
+        margin-right: -10px;
+     }
+ :root {
         --swiper-navigation-size: 32px;
     }
 }
@@ -127,10 +117,11 @@
     .swiper-wrapper .review-text {
         min-width: 284px;
     }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: calc(50% + 190px);
+     .review-button-prev {
+        margin-left: -10px;
     }
-
+    
+    .review-button-next {
+       margin-right: -10px;
+    }
 }
