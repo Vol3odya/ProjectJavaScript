@@ -1,4 +1,4 @@
-import { fetchReviews, createReviewItem, initializeSlider, displayReviews } from './reviews.js';
+import { fetchReviews, createReviewItem, initializeSlider, displayReviews } from './js/reviews.js';
 
 
 
