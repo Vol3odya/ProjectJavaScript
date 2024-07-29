@@ -1,4 +1,4 @@
-const fetchReviews = async () => {
+ export const fetchReviews = async () => {
     try {
       const response = await fetch('https://portfolio-js.b.goit.study/api/reviews', {
         headers: {
@@ -21,7 +21,7 @@ const fetchReviews = async () => {
     }
   };
 
-  const createReviewItem = (review) => {
+  export const createReviewItem = (review) => {
     return `
       <li class="swiper-slide reviews-items">
         <img class="reviews-img" src="${review.avatar_url}" alt="${review.author}" />
@@ -31,7 +31,7 @@ const fetchReviews = async () => {
     `;
   };
 
-const initializeSlider = () => {
+export const initializeSlider = () => {
   const swiper = new Swiper('.swiper', {
       navigation: {
       nextEl: '.swiper-button-next',
@@ -70,7 +70,7 @@ const initializeSlider = () => {
   });
 };
 
-const displayReviews = async () => {
+export const displayReviews = async () => {
   try {
     const reviews = await fetchReviews(); 
     const reviewsList = document.querySelector('.reviews-list');
