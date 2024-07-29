@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
     <script type="module" crossorigin src="/ProjectJavaScript/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-f6eb2428.css">
+    <link rel="modulepreload" crossorigin href="/ProjectJavaScript/assets/vendor-6d2582da.js">
+    <link rel="stylesheet" href="/ProjectJavaScript/assets/vendor-05b27bb2.css">
+    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-fe3a6695.css">
   </head>
   <body>
     
@@ -77,10 +79,84 @@
       <!-- Igor Stonoga -->
       <!-- Section About me -->
       <section class="aboutme">
-  <div class="container">
-    <p>Aboutme</p>
+  <!--hide h2-->
+  <h2 class="section-title visually-hidden"> ABOUT ME </h2>
+
+<!-------------Section-1------------------->
+<div class="container about-list">
+  <div class="about-list-conteiner">
+    <div class="text-box">
+      <p>I work with people all over the world to create impressive and <span>functional</span> <span>websites</span> that reflect each client's unique personality.</p>
+    </div>
   </div>
+  
+  <div class="about-list-conteiner aboutme-img">
+    <img srcset="/ProjectJavaScript/assets/hero-photo-2c2ada06.jpg 1x, /ProjectJavaScript/assets/hero-photo@2x-9e85bd51.jpg 2x"
+    src="/ProjectJavaScript/assets/hero-photo-2c2ada06.jpg" alt="hero-photo">
+  </div>
+</div>
+
+<!-----------------Section-2------------>
+
+<div class="cv">
+  
+  <ul class="accordion-container">
+    <li class="accordion">
+      <h3 class="accordion-header"> <button type="button" class="ac-trigger">ABOUT ME</button> </h3>
+      <p>I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. 
+        I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. 
+        I always follow the latest trends and look for unconventional, creative solutions to problems. 
+        I have a high level of analytical skills and am able to effectively solve 
+        even the most difficult tasks encountered on the way.</p>
+      <p>Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas 
+        and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations,
+         while maintaining a high quality of work. I am always looking for opportunities for self-improvement. 
+         I actively study new technologies and practices to stay abreast of the latest innovations. 
+         I have a strong understanding of various programming languages, frameworks and architectural concepts that 
+         allow me to create efficient and scalable software.</p>
+    </li>
+
+    <li class="accordion">
+      <h3 class="accordion-header"> <button type="button" class="ac-trigger">ROLE</button></h3>
+        <p>Frontend development</p>
+        <p>HeadlessCMS,Wordpress</p>
+        <p>Blender(enjoy)</p>
+    </li>
+
+    <li class="accordion">
+      <h3 class="accordion-header"> <button type="button" class="ac-trigger">EDUCATION</button></h3>
+      <p>2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p>
+      <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+      <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+    </li>
+  </ul>
+</div>
+
+
+<!--------------Section-3------------->
+<div class="swiper">
+  <ul class="swiper-wrapper">
+    <li class="swiper-slide">HTML/CSS</li>
+    <li class="swiper-slide">JavaScript</li>
+    <li class="swiper-slide">React</li>
+    <li class="swiper-slide">Node.js</li>
+    <li class="swiper-slide">React Native</li>
+    <li class="swiper-slide">Soft skills</li>
+    <li class="swiper-slide">Git</li>
+  </ul>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-scrollbar"></div>
+
+</div>
+
 </section>
+
+
+
+
+<!-- - <script> new Accordion('.accordion-container'); </script> -->
+
 
 
       <!-- Vasyl Vyshnevskyi -->
