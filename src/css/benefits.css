@@ -66,4 +66,44 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits-btn:hover,
+.benefits-btn:focus {
+  background-color: #e0373f;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  .benefits-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .benefits .container {
+    display: flex;
+  }
+  .benefits-title {
+    white-space: nowrap;
+    margin-bottom: 0;
+    margin-right: 412px;
+  }
+  .benefits-item {
+    max-width: 332px;
+  }
 }
