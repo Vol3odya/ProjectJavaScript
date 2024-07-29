@@ -81,4 +81,3 @@ export const displayReviews = async () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', displayReviews);
