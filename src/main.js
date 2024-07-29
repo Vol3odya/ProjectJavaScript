@@ -6,5 +6,6 @@ import { fetchReviews, createReviewItem, initializeSlider, displayReviews } from
 
 
 
+
 //Reviews//
 document.addEventListener('DOMContentLoaded', displayReviews);
