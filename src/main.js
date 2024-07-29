@@ -1,3 +1,9 @@
+import { feedbackForm, modalWindow, eventHandler, modalWindowClose } from './js/worktogether';
+
+
+feedbackForm.addEventListener('submit', eventHandler);
+modalWindow.addEventListener('click', modalWindowClose);
+
 import {
   fetchReviews,
   createReviewItem,
@@ -5,5 +11,4 @@ import {
   displayReviews,
 } from './js/reviews.js';
 
-//Reviews//
 document.addEventListener('DOMContentLoaded', displayReviews);

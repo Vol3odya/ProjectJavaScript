@@ -2,6 +2,33 @@
   <div class="container">
     <p>Worktogether</p>
   </div>
+
+  <!-- Modal window -->
+
+  <form class="js-feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input type="email" name="email" autofocus />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
 </section>
 
+
+<div class="backdrop js-modal-backdrop">
+  <div class="modal ">
+    <button type="button" class="js-modal-close modal-close">
+      <svg class="modal-close-icon" width="12" height="12">
+        <use href="./img/icons.svg#icon-close-icon" />
+      </svg>
+    </button>
+    <h1 class="modal-title">Thank you for your interest in cooperation!</h1>
+    <p class="modal-descr">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+
 <!-- Добавте на секцію id="worktogether", щоб якірне посилання спрацювало, дякую) -->
+
