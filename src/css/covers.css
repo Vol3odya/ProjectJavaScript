@@ -1,0 +1,118 @@
+ /*------- Cover Section ------ */
+
+ .cover-section {
+     padding-top: 32px;
+     padding-bottom: 32px;
+     position: relative;
+ }
+
+ .cover-container {
+     padding-left: 0;
+     padding-right: 0;
+     height: 508px;
+     backdrop-filter: blur(30px);
+     background: rgba(217, 217, 217, 0.04);
+     background-image: url('../img/covers/cover-bg-mob.jpg');
+     overflow: hidden;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
+     .cover-container {
+         background-image: url('../img/covers/cover-bg-mob_2x.jpg');
+     }
+ }
+
+ .cover-image {
+     width: 282px;
+     height: 162px;
+ }
+
+ .cover-list {
+     display: flex;
+     transform: rotate(18deg);
+     transform-origin: right;
+ }
+
+ .cover-item {
+     background-size: cover;
+     flex-shrink: 0;
+     margin-bottom: 35px;
+     margin-right: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     white-space: nowrap;
+ }
+
+ .cover-section.animate .cover-item {
+     animation-name: marqueeLine;
+     animation-duration: 10s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes marqueeLine {
+     from {
+         transform: translateX(-20%);
+     }
+
+     to {
+         transform: translateX(-180%);
+     }
+ }
+
+
+ @media screen and (min-width: 768px) {
+     .cover-section {
+         padding-top: 48px;
+         padding-bottom: 48px;
+     }
+
+     .cover-container {
+         height: 960px;
+         background-image: url('../img/covers/cover-bg-tab.jpg');
+     }
+
+     @media screen and (min-resolution: 192dpi) {
+         .cover-container {
+             background-image: url('../img/covers/cover-bg-tab_2x.jpg');
+         }
+     }
+
+     .cover-image {
+         width: 544px;
+         height: 314px;
+     }
+
+     .cover-item {
+         margin-bottom: 60px;
+         margin-right: 40px;
+     }
+ }
+
+
+ @media screen and (min-width: 1440px) {
+     .cover-section {
+         padding-top: 82px;
+         padding-bottom: 82px;
+     }
+
+     .cover-container {
+         background-image: url('../img/covers/cover-bg-desk.jpg');
+     }
+
+     @media screen and (min-resolution: 192dpi) {
+         .cover-container {
+             background-image: url('../img/covers/cover-bg-desk_2x.jpg');
+         }
+     }
+ }
+
+ .cover-section.animate .cover-item {
+     animation-name: marqueeLine;
+     animation-duration: 10s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+ }
