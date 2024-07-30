@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/ProjectJavaScript/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/ProjectJavaScript/assets/vendor-6798bcc9.js">
     <link rel="stylesheet" href="/ProjectJavaScript/assets/vendor-97288050.css">
-    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-d84587d7.css">
+    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-29ff64d3.css">
   </head>
   <body>
     
@@ -24,8 +24,8 @@
   <div class="container">
     <div class="header-wrapper">
       <div class="logo-wrapper">
-        <a href="" class="image-wrapper">
-          <img src="" alt="logo" width="80" height="80" />
+        <a href="../index.html" class="image-wrapper">
+          <img src="../img/header/logo2.png" alt="logo" width="80" height="80" />
           <p class="logo-text">jefferson*</p>
         </a>
       </div>
@@ -59,7 +59,7 @@
 
       <button class="open-burger" aria-label="close window">
         <svg class="burger-icon" width="28" height="28">
-          <use href=""></use>
+          <use href="../img/header/header-svg.svg#icon-burger"></use>
         </svg>
       </button>
 
@@ -93,7 +93,7 @@
         
         <button type="button" class="close-btn" aria-label="close modal window">
           <svg width="28" height="28" class="modal-close-btn">
-            <use href=""></use>
+            <use href="../img/header/header-svg.svg#icon-close"></use>
           </svg>
         </button>
 
@@ -480,10 +480,61 @@
 
       <!-- Владислав Венгер -->
       <!-- Section Work together -->
-      <section class="worktogether">
+      <footer class="worktogether" id="worktogether">
   <div class="container">
-    <p>Worktogether</p>
+    <div class="footer-wrap">
+      <div class="footer-top">
+        <img
+          srcset="../img/worktogether/footer-image-tab_desk-2x.png 2x"
+          src="../img/worktogether/footer-image-tab_desk.png"
+          alt="Lloyd Jefferson"
+          class="footer-img"
+        />
+        <h2 class="footer-title">
+          Let's <span class="footer-span">work</span>
+        </h2>
+        <h2 class="footer-title">together</h2>
+      </div>
+      <form class="footer-form js-form">
+        <div class="input-wrapper">
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="footer-form-input"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
+          <div class="validation-message" id="email-validation-message"></div>
+        </div>
+
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="user-text"
+            id="user-text"
+            class="footer-form-input"
+            placeholder="comments"
+            required
+          />
+        </div>
+
+        <button type="submit" class="footer-form-btn js-modal-btn">Send</button>
+      </form>
+      <ul class="footer-contacts">
+        <li class="footer-contacts-item">
+          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="footer-contacts-item">
+          <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <div class="worktogether-bg"></div>
+</footer>
+
 
   <!-- Modal window -->
 
