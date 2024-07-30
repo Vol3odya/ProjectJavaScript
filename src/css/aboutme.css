@@ -240,10 +240,20 @@ text-align: left;
 
         .ac-list .my-button::after {
           content: url("../img/aboutme/IconT.svg");
+          border: 1px solid rgba(250, 250, 250, 0.2);
+          border-radius: 18px;
+          padding: 9px;
+          width: 36px;
+          height: 36px;
         }
     
         .ac-list.is-active>.my-header .my-button::after {
           content: url("../img/aboutme/IconB.svg");
+          border: 1px solid rgba(250, 250, 250, 0.2);
+          border-radius: 18px;
+          padding: 9px;
+          width: 36px;
+          height: 36px;
         }
 
     .acc-container {
@@ -378,10 +388,20 @@ text-align: left;
 
     .ac-list .my-button::after {
       content: url("../img/aboutme/IconT.svg");
+      border: 1px solid rgba(250, 250, 250, 0.2);
+      border-radius: 18px;
+      padding: 9px;
+      width: 36px;
+      height: 36px;
     }
   
     .ac-list.is-active>.my-header .my-button::after {
       content: url("../img/aboutme/IconB.svg");
+      border: 1px solid rgba(250, 250, 250, 0.2);
+      border-radius: 18px;
+      padding: 9px;
+      width: 36px;
+      height: 36px;
     }
 
   .ac-list{
