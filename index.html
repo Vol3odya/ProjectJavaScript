@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/ProjectJavaScript/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/ProjectJavaScript/assets/vendor-6798bcc9.js">
     <link rel="stylesheet" href="/ProjectJavaScript/assets/vendor-97288050.css">
-    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-9b8e8031.css">
+    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-4ffeb2f0.css">
   </head>
   <body>
     
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="header-wrapper">
       <div class="logo-wrapper">
-        <a href="/index.html" class="image-wrapper">
+        <a href="./index.html" class="image-wrapper">
           <img src="/ProjectJavaScript/assets/logo2-0e2fbac5.png" alt="logo" width="80" height="80" />
           <p class="logo-text">jefferson*</p>
         </a>
@@ -59,7 +59,7 @@
 
       <button class="open-burger" aria-label="close window">
         <svg class="burger-icon" width="28" height="28">
-          <use href="../img/header/header-svg.svg#icon-burger"></use>
+          <use href="/ProjectJavaScript/assets/header-svg-5bb72faf.svg#icon-burger"></use>
         </svg>
       </button>
 
@@ -93,7 +93,7 @@
         
         <button type="button" class="close-btn" aria-label="close modal window">
           <svg width="28" height="28" class="modal-close-btn">
-            <use href="../img/header/header-svg.svg#icon-close"></use>
+            <use href="/ProjectJavaScript/assets/header-svg-5bb72faf.svg#icon-close"></use>
           </svg>
         </button>
 
@@ -149,33 +149,33 @@
     </div>
   </div>
   
-  <div class="about-list-conteiner aboutme-img">
+  <div class="aboutme-img">
     <!--<img srcset="./img/aboutme/hero-photo.jpg 1x, ./img/aboutme/hero-photo@2x.jpg 2x"
     src="./img/aboutme/hero-photo.jpg" alt="hero-photo">-->
-    <picture>
-      <source srcset="/ProjectJavaScript/assets/hero-photo@2x-9e85bd51.jpg 2x, /ProjectJavaScript/assets/hero-photo-2c2ada06.jpg 1x" media="(min-width: 1440px)">
+    <picture class="aboutme-img">
+      <source srcset="/ProjectJavaScript/assets/hero-photo@2x-9e85bd51.jpg 2x, /ProjectJavaScript/assets/hero-photo-2c2ada06.jpg 1x" width="680" hight="700" media="(min-width: 1376px)">
       <source srcset="/ProjectJavaScript/assets/hero-photo-tablet@2x-0d5d5cd8.jpg 2x, /ProjectJavaScript/assets/hero-photo-tablet-502cf8d8.jpg 1x" media="(min-width: 768px)">
       <source srcset="/ProjectJavaScript/assets/hero-photo-mobile@2x-dff1f0b1.jpg 2x, /ProjectJavaScript/assets/hero-photo-mobile-6bd719dd.jpg 1x" media="(max-width: 767px)">
-      <img src="/ProjectJavaScript/assets/hero-photo-2c2ada06.jpg" alt="hero-photo">
+      <img src="/ProjectJavaScript/assets/hero-photo-2c2ada06.jpg" class="aboutme-img" alt="hero-photo">
     </picture>
   </div>
 </div>
 
 <!-----------------Section-2------------>
 
-<div class="cv">
+<div class="container cv">
   
   <ul class="acc-container accordion-container">
     <li class="ac ac-list">
-      <h3 class="ac-header"> <button type="button" class="ac-trigger">ABOUT ME</button> </h3>
-      <div class="ac-panel">
-          <p class="ac-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. 
+      <h3 class="ac-header my-header"> <button type="button" class="ac-trigger my-button">ABOUT ME</button> </h3>
+      <div class="ac-panel my-text">
+          <p class="my-text ac-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. 
           I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. 
           I always follow the latest trends and look for unconventional, creative solutions to problems. 
           I have a high level of analytical skills and am able to effectively solve 
           even the most difficult tasks encountered on the way.</p>
 
-          <p class="ac-text">Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas 
+          <p class="ac-text my-text">Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas 
           and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations,
            while maintaining a high quality of work. I am always looking for opportunities for self-improvement. 
            I actively study new technologies and practices to stay abreast of the latest innovations. 
@@ -183,6 +183,11 @@
            allow me to create efficient and scalable software.</p>
       </div>
     </li>
+
+    <svg class="vector">
+      <path fill="none" stroke="rgba(250, 250, 250, 0.2)" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"
+        d="M0 16h22016"></path>
+    </svg>
 
     <li class="ac">
       <h3 class="ac-header"> <button type="button" class="ac-trigger">ROLE</button></h3>
@@ -193,6 +198,11 @@
       </div>
     </li>
 
+    <svg class="vector">
+      <path fill="none" stroke="rgba(250, 250, 250, 0.2)" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt"
+        stroke-linejoin="miter" d="M0 16h22016"></path>
+    </svg>
+
     <li class="ac">
       <h3 class="ac-header"> <button type="button" class="ac-trigger">EDUCATION</button></h3>
       <div class="ac-panel">
@@ -201,8 +211,14 @@
         <p class="ac-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
       </div>
     </li>
+    <svg class="vector">
+      <path fill="none" stroke="rgba(250, 250, 250, 0.2)" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt"
+        stroke-linejoin="miter" d="M0 16h22016"></path>
+    </svg>
   </ul>
 </div>
+
+
 
 
 <!--------------Section-3------------->
