@@ -367,7 +367,7 @@ text-align: left;
   }
 
     .ac-list .my-button::after {
-      content: url("../img/aboutme/symbol-defs.svg#icon-IconT");
+      content: "A";
     }
   
     .ac-list.is-active>.my-header .my-button::after {
