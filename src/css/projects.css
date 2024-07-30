@@ -38,7 +38,8 @@ body {
 
 
 .projects {
-    position: absolute;
+    /*position: absolute;*/
+    margin-top: 64px;
 }
 /* body {
     width: 345px;
@@ -127,6 +128,15 @@ body {
 }
 
 /* =============== */
+
+.project-wrap{
+    width: 156px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 32px;
+    position: relative;
+}
+
 .project-button-prev,
 .project-button-next {
     border: 1px solid rgba(250, 250, 250, 0.2);
@@ -162,6 +172,16 @@ body {
     /* .container {
         width: 704px;
     } */
+
+   /* .projects {
+        max-width: 704px;
+        padding-left: calc(50% - 352px);
+    }*/
+
+    .projects-item{
+        min-width: 704px;
+        height: 1191px;
+    }
 
     .projects-languages-wrap {
         padding: 64px;
@@ -200,6 +220,9 @@ body {
 
     .projects-item {
         display: flex;
+        flex-wrap: wrap;
+        width: 1376px;
+        height: 625px;
     }
 
     .projects-text {
