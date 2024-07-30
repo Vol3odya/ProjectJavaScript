@@ -5,8 +5,7 @@ aboutme();
 
 
 //Projects
-import { projects } from './js/projects.js';
-projects();
+
 
 
 //Covers
