@@ -1,14 +1,14 @@
-//import Accordion from 'accordion-js';
-//import 'accordion-js/dist/accordion.min.css';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
-//import 'swiper/css/pagination';
+
 
 new Swiper('.swiper', {
-  slidesPerView: 6,
+  
   loop: true, 
   speed: 400,
   navigation: {
@@ -24,29 +24,36 @@ new Swiper('.swiper', {
   },
   keyboard: {
     enabled: true,
-
-  }
+    onlyInViewport: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1440: {
+      slidesPerView: 6,
+      spaceBetween: 0,
+    },
+  },
 });
 
 const swiper = document.querySelector('.swiper');
 console.log(swiper);
-//swiper.data-swiper-slide-index[0].backgroundColor = black;
-
-//const accordion = document.querySelector('accordion-container')
-//console.log(accordion);
 
 
-//const accord = new Accordion('.container-second', {//
-//  duration: 400,
-//  showMultiple: true,
-//  onOpen: function(currentElement) {
-//  console.log(currentElement);
-//  }
-//});
-//
-//const accordions = Array.from(document.querySelectorAll('.accordion-container'));
-//new Accordion(accordions, {duration: 400,
-//  showMultiple: true,
-//  onOpen: function(currentElement) {
-//    console.log(currentElement);
-//  }});
+const accordion = document.querySelector('.accordion-container')
+console.log(accordion);
+
+const accordions = Array.from(document.querySelectorAll('.accordion-container'));
+new Accordion(accordions, {duration: 600,
+  showMultiple: true,
+  onOpen: function(currentElement) {
+    console.log(currentElement);
+  },
+  openOnInit: [0]
+});
