@@ -17,8 +17,8 @@ ul, li {
 /*__________________ MOBILE ____________________*/
 @media screen and (max-width: 767.9px) {
   .aboutme {
-  /*width: 343px;*/
-  height: 2014px;
+  /*width: 343px;
+  height: 2014px;*/
   top: 876px;
   /*left: 16px;*/
   gap: 32px;
@@ -76,8 +76,8 @@ text-align: left;
 }
 
 .cv {
-  /*width: 1376px;*/
-  height: 608px;
+  /*width: 1376px;
+  height: 608px;*/
   gap: 32px;
   margin-top: 96px;
 }
@@ -148,13 +148,49 @@ text-align: left;
   color: #fafafa;
 }
 
-.swiper-wrapper {
+.skills-conteiner {
+  margin-top: 88px;
   width: 343px;
   height: 130px;
-  gap: 55px;
+  min-width: 0;
 }
 
-.swiper-slide-active {
+.skills {
+  width: 260px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  max-width: 260px;
+}
+
+.skill-slide {
+  max-width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 37, 39, 1);
+  border-color: rgba(250, 250, 250, 0.2);
+  border: 1px;
+  padding-top: 88px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-next:after {
+  content: url("../img/reviews/arrow-narrow-right.svg");
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px;
+  width: 52px;
+  height: 52px;
+  margin-inline: 12px;
+}
+
+.skill-slide-active {
   background-color: rgba(237, 59, 68, 1);
 }
 }
@@ -164,8 +200,8 @@ text-align: left;
 
 @media screen and (min-width: 768px) and (max-width: 1439.9px) {
   .aboutme {
-    /*width: 704px;*/
-    height: 2312px;
+    /*width: 704px;
+    height: 2312px;*/
     top: 1088px;
     /*left: 32px;*/
     /*gap: 64px;*/
@@ -222,8 +258,8 @@ text-align: left;
     }
   
   .cv {
-    /*width: 1376px;*/
-    height: 608px;
+    /*width: 1376px;
+    height: 608px;*/
     gap: 32px;
     margin-top: 96px;
     padding: 0;
@@ -295,13 +331,49 @@ text-align: left;
       color: #fafafa;
     }
   
-  .swiper-wrapper {
-    width: 704px;
-    height: 200px;
-    gap: 64px;
-  } 
+    .skills-conteiner {
+      margin-top: 88px;
+      width: 704px;
+      height: 200px;
+      min-width: 0;
+    }
+  
+    .skills {
+      width: 600px;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      max-width: 600px;
+    }
+  
+    .skill-slide {
+      max-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(36, 37, 39, 1);
+      border-color: rgba(250, 250, 250, 0.2);
+      border: 1px;
+      padding-top: 88px;
+      margin-left: 0;
+      margin-right: 0;
+    }
 
-  .swiper-slide-active {
+        .my-next:after {
+          content: url("../img/reviews/arrow-narrow-right.svg");
+          border: 1px solid rgba(250, 250, 250, 0.2);
+          border-radius: 60px;
+          padding: 18px;
+          width: 52px;
+          height: 52px;
+          margin-inline: 12px;
+        }
+
+  .skill-slide-active {
   background-color: rgba(237, 59, 68, 1);
 }
 }
@@ -321,8 +393,8 @@ text-align: left;
 
 @media screen and (min-width: 1440px) {
   .aboutme {
-    /*width: 1376px;*/
-    height: 1700px;
+    /*width: 1376px;
+    height: 1700px;*/
     margin-top: 96px;
     /*left: 32px;*/
     /*gap: 96px;*/
@@ -371,8 +443,8 @@ text-align: left;
     }
   
   .cv {
-    /*width: 1376px;*/
-    height: 608px;
+    /*width: 1376px;
+    height: 608px;*/
     gap: 32px;
     margin-top: 96px;
   }
@@ -442,16 +514,19 @@ text-align: left;
     }
 
   .skills-conteiner{
+    margin-top: 88px;
     width: 1312px;
     height: 200px;
     min-width: 0;
   }
   
   .skills {
-    width: 1312px;
+    width: 1200px;
     height: 200px;
     display: flex;
     flex-direction: row;
+    gap: 0;
+    max-width: 1200px;
   }
 
   .skill-slide {
@@ -465,8 +540,22 @@ text-align: left;
     background-color: rgba(36, 37, 39, 1);
     border-color: rgba(250, 250, 250, 0.2);
     border: 1px;
+    padding-top: 88px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .swiper-slide-active {
+
+    .my-next:after {
+      content: url("../img/reviews/arrow-narrow-right.svg");
+      border: 1px solid rgba(250, 250, 250, 0.2);
+      border-radius: 60px;
+      padding: 18px;
+      width: 52px;
+      height: 52px;
+      margin-inline: 12px;
+    }
+
+  .skill-slide-active {
     background-color: rgba(237, 59, 68, 1);
   }
   

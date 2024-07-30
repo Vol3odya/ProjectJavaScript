@@ -1,4 +1,12 @@
 
+//Aboutme
+import { aboutme } from './js/aboutme.js';
+aboutme();
+
+
+
+
+
 //Covers
 import { setupCoverAnimation } from './js/covers.js';
 setupCoverAnimation();
