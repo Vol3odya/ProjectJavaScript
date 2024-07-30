@@ -23,3 +23,4 @@ function modalWindowClose(e) {
 }
 
 export { feedbackForm, modalWindow, eventHandler, modalWindowClose };
+  
