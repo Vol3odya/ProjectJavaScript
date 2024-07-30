@@ -1,4 +1,4 @@
-html,
+/*html,
 body {
     position: relative;
     height: 100%;
@@ -43,10 +43,10 @@ body {
     background: #1c1d20;
 } */
 
-.container {
+/*.container {
     width: 344px;
 }
-
+*/
 .projects-item {
     background: #fafafa;
     border-radius: 24px;
