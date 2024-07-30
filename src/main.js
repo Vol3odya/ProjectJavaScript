@@ -1,8 +1,10 @@
 
+//Covers
+import { coversSection, observer } from './js/covers.js';
+observer.observe(coversSection);
 
 
-
-
+//Reviews
 import {
   fetchReviews,
   createReviewItem,
