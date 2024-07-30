@@ -1,7 +1,7 @@
 
 //Covers
 import { coversSection, observer } from './js/covers.js';
-observer.observe(coversSection);
+observer.observe(coversSection());
 
 
 //Reviews
