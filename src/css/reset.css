@@ -6,6 +6,8 @@ html{
 body {
   font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -40,4 +42,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+picture{
+  padding: 0;
+}
+
+source{
+  padding: 0;
+  max-height: 0;
 }
