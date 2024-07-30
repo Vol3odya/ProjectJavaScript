@@ -367,11 +367,11 @@ text-align: left;
   }
 
     .ac-list .my-button::after {
-      content: url("../img/aboutme/symbol-defs.svg#icon-IconT");
+      content: url("./img/aboutme/symbol-defs.svg#icon-IconT");
     }
   
     .ac-list.is-active>.my-header .my-button::after {
-      content: url("../img/aboutme/symbol-defs.svg#icon-IconB");
+      content: url("./img/aboutme/symbol-defs.svg#icon-IconB");
     }
 
   .ac-list{
