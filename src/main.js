@@ -4,7 +4,9 @@ import { aboutme } from './js/aboutme.js';
 aboutme();
 
 
-
+//Projects
+import { projects } from './js/projects.js';
+projects();
 
 
 //Covers

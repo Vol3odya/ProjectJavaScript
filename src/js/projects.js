@@ -2,7 +2,8 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-export const swiper = new Swiper('.projects-js', {
+export function projects() {
+  const swiper = new Swiper('.projects-js', {
   slidesPerView: 1,
   spaceBetween: 30,
   keyboard: {
@@ -29,3 +30,6 @@ document.addEventListener('keydown', event => {
     }
   }
 });
+
+}
+  
