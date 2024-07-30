@@ -171,11 +171,11 @@ text-align: left;
   display: flex;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   background-color: rgba(36, 37, 39, 1);
   border-color: rgba(250, 250, 250, 0.2);
   border: 1px;
-  padding-top: 88px;
+  padding-top: 53px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -348,7 +348,7 @@ text-align: left;
       display: flex;
       text-align: center;
       justify-content: center;
-      align-items: center;
+      /*align-items: center;*/
       background-color: rgba(36, 37, 39, 1);
       border-color: rgba(250, 250, 250, 0.2);
       border: 1px;
@@ -525,7 +525,7 @@ text-align: left;
     display: flex;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     background-color: rgba(36, 37, 39, 1);
     border-color: rgba(250, 250, 250, 0.2);
     border: 1px;
