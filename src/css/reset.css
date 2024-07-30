@@ -1,4 +1,8 @@
 /* Reset styles */
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
@@ -28,6 +32,7 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0;
 }
 
 img {
