@@ -1,5 +1,110 @@
 <section class="aboutme">
-  <div class="container">
-    <p>Aboutme</p>
+  <!--hide h2-->
+  <h2 class="section-title visually-hidden"> ABOUT ME </h2>
+
+<!-------------Section-1------------------->
+<div class="container about-list">
+  <div class="about-list-conteiner">
+    <div class="text-box">
+      <p class="text-about">I work with people all over the world to create impressive and <span style="color: rgba(237, 59, 68, 1);">functional</span> <span style="color:rgba(122, 122, 123);
+;">websites</span> that reflect each client's unique personality.</p>
+    </div>
   </div>
+  
+  <div class="aboutme-img">
+    <!--<img srcset="./img/aboutme/hero-photo.jpg 1x, ./img/aboutme/hero-photo@2x.jpg 2x"
+    src="./img/aboutme/hero-photo.jpg" alt="hero-photo">-->
+    <picture class="aboutme-img">
+      <source srcset="./img/aboutme/hero-photo@2x.jpg 2x, ./img/aboutme/hero-photo.jpg 1x " width="680" hight="700" media="(min-width: 1376px)">
+      <source srcset="./img/aboutme/hero-photo-tablet@2x.jpg 2x, ./img/aboutme/hero-photo-tablet.jpg 1x " media="(min-width: 768px)">
+      <source srcset="./img/aboutme/hero-photo-mobile@2x.jpg 2x, ./img/aboutme/hero-photo-mobile.jpg 1x " media="(max-width: 767px)">
+      <img src="./img/aboutme/hero-photo.jpg" class="aboutme-img" alt="hero-photo">
+    </picture>
+  </div>
+</div>
+
+<!-----------------Section-2------------>
+
+<div class="container cv">
+  
+  <ul class="acc-container accordion-container">
+    <li class="ac ac-list">
+      <h3 class="ac-header my-header"> <button type="button" class="ac-trigger my-button">ABOUT ME</button> </h3>
+      <div class="ac-panel my-text">
+          <p class="my-text ac-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. 
+          I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. 
+          I always follow the latest trends and look for unconventional, creative solutions to problems. 
+          I have a high level of analytical skills and am able to effectively solve 
+          even the most difficult tasks encountered on the way.</p>
+
+          <p class="ac-text my-text">Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas 
+          and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations,
+           while maintaining a high quality of work. I am always looking for opportunities for self-improvement. 
+           I actively study new technologies and practices to stay abreast of the latest innovations. 
+           I have a strong understanding of various programming languages, frameworks and architectural concepts that 
+           allow me to create efficient and scalable software.</p>
+      </div>
+    </li>
+
+    <svg class="vector">
+      <path fill="none" stroke="rgba(250, 250, 250, 0.2)" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"
+        d="M0 16h22016"></path>
+    </svg>
+
+    <li class="ac">
+      <h3 class="ac-header"> <button type="button" class="ac-trigger">ROLE</button></h3>
+      <div class="ac-panel">
+        <p class="ac-text">Frontend development</p>
+        <p class="ac-text">HeadlessCMS,Wordpress</p>
+        <p class="ac-text">Blender(enjoy)</p>
+      </div>
+    </li>
+
+    <svg class="vector">
+      <path fill="none" stroke="rgba(250, 250, 250, 0.2)" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt"
+        stroke-linejoin="miter" d="M0 16h22016"></path>
+    </svg>
+
+    <li class="ac">
+      <h3 class="ac-header"> <button type="button" class="ac-trigger">EDUCATION</button></h3>
+      <div class="ac-panel">
+        <p class="ac-text">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p>
+        <p class="ac-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+        <p class="ac-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+      </div>
+    </li>
+    <svg class="vector">
+      <path fill="none" stroke="rgba(250, 250, 250, 0.2)" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt"
+        stroke-linejoin="miter" d="M0 16h22016"></path>
+    </svg>
+  </ul>
+</div>
+
+
+
+
+<!--------------Section-3------------->
+<div class="swiper skills-conteiner">
+  <ul class="swiper-wrapper skills">
+    <li class="swiper-slide skill-slide"> <p>HTML/CSS</p> </li>
+    <li class="swiper-slide skill-slide">JavaScript</li>
+    <li class="swiper-slide skill-slide">React</li>
+    <li class="swiper-slide skill-slide">Node.js</li>
+    <li class="swiper-slide skill-slide">React Native</li>
+    <li class="swiper-slide skill-slide">Soft skills</li>
+    <li class="swiper-slide skill-slide">Git</li>
+  </ul>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-scrollbar"></div>
+
+</div>
+
 </section>
+
+<script type="module" src="./js/aboutme.js"></script>
+
+
+<script>
+  new Accordion('.accordion-container');
+</script>
