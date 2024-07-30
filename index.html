@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/ProjectJavaScript/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/ProjectJavaScript/assets/vendor-6798bcc9.js">
     <link rel="stylesheet" href="/ProjectJavaScript/assets/vendor-97288050.css">
-    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-63665ff5.css">
+    <link rel="stylesheet" href="/ProjectJavaScript/assets/index-9b8e8031.css">
   </head>
   <body>
     
@@ -150,8 +150,14 @@
   </div>
   
   <div class="about-list-conteiner aboutme-img">
-    <img srcset="/ProjectJavaScript/assets/hero-photo-2c2ada06.jpg 1x, /ProjectJavaScript/assets/hero-photo@2x-9e85bd51.jpg 2x"
-    src="/ProjectJavaScript/assets/hero-photo-2c2ada06.jpg" alt="hero-photo">
+    <!--<img srcset="./img/aboutme/hero-photo.jpg 1x, ./img/aboutme/hero-photo@2x.jpg 2x"
+    src="./img/aboutme/hero-photo.jpg" alt="hero-photo">-->
+    <picture>
+      <source srcset="../img/aboutme/hero-photo@2x.jpg 2x, ./img/aboutme/hero-photo.jpg 1x " media="(min-width: 1440px)">
+      <source srcset="../img/aboutme/hero-photo-tablet@2x.jpg 2x, ../img/aboutme/hero-photo-tablet.jpg 1x " media="(min-width: 768px)">
+      <source srcset="../img/aboutme/hero-photo-mobile@2x.jpg 2x, ../img/aboutme/hero-photo-mobile.jpg 1x " media="(max-width: 767px)">
+      <img src="../img/aboutme/hero-photo.jpg" alt="hero-photo">
+    </picture>
   </div>
 </div>
 
@@ -456,7 +462,6 @@
       </li>
     </ul>
   </div>
-  <script src="../js/covers.js" defer></script>
 </section>
 
       <!-- Anastasiia Tolmachova -->
