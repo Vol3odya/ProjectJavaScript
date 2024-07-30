@@ -17,10 +17,10 @@ ul, li {
 /*__________________ MOBILE ____________________*/
 @media screen and (max-width: 767.9px) {
   .aboutme {
-  width: 343px;
+  /*width: 343px;*/
   height: 2014px;
   top: 876px;
-  left: 16px;
+  /*left: 16px;*/
   gap: 32px;
 }
 
@@ -32,8 +32,8 @@ ul, li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left:  auto;
-  margin-right: auto;
+  margin-left:  calc(50% - 162px);
+  /*margin-right: auto;*/
   padding-top: 20px;
 }
 
@@ -60,6 +60,9 @@ text-align: left;
   width: 343px;
   height: 500px;
   border-radius: 24px;
+  margin-left: calc(50% - 172px);
+  /*margin-right: auto;*/
+  background: #242527;
 }
 
 .cv {

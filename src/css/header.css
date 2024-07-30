@@ -38,14 +38,17 @@
 }
 
 .burger-icon {
-  width: 28px;
-  height: 28px;
+  max-width: 28px;
+  max-height: 28px;
   fill: transparent;
   stroke-width: 2px;
   stroke: #fafafa;
 }
 
 .open-burger {
+  max-width: 28px;
+  max-height: 28px;
+  border: none;
   /*display: flex;
   align-items: flex-start;*/
 }
@@ -69,7 +72,8 @@
   background: none;
   border: none;
   padding: 0;
-  text-decoration: underline;     
+  text-decoration: underline;
+  margin-top: 10px; 
 }
 
 .menu-list {
@@ -225,6 +229,10 @@
       display: flex;
       flex-wrap: nowrap;
       gap: 8px;
+      border-radius: 60px;
+      width: 163px;
+      height: 55px;
+      background-color: #ed3b44;
   }
 
   .logo-wrapper {
