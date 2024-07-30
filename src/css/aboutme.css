@@ -92,7 +92,7 @@ text-align: left;
 }
 
 .ac-list .my-button::after {
-  content: url("../img/aboutme/IconT.svg");
+  content: url("../img/aboutme/IconB.svg");
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 18px;
   padding: 9px;
@@ -101,7 +101,7 @@ text-align: left;
 }
 
 .ac-list.is-active>.my-header .my-button::after {
-  content: url("../img/aboutme/IconB.svg");
+  content: url("../img/aboutme/IconT.svg");
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 18px;
   padding: 9px;
@@ -275,7 +275,7 @@ text-align: left;
   }
 
         .ac-list .my-button::after {
-          content: url("../img/aboutme/IconT.svg");
+          content: url("../img/aboutme/IconB.svg");
           border: 1px solid rgba(250, 250, 250, 0.2);
           border-radius: 18px;
           padding: 9px;
@@ -284,7 +284,7 @@ text-align: left;
         }
     
         .ac-list.is-active>.my-header .my-button::after {
-          content: url("../img/aboutme/IconB.svg");
+          content: url("../img/aboutme/IconT.svg");
           border: 1px solid rgba(250, 250, 250, 0.2);
           border-radius: 18px;
           padding: 9px;
@@ -459,7 +459,7 @@ text-align: left;
   }
 
     .ac-list .my-button::after {
-      content: url("../img/aboutme/IconT.svg");
+      content: url("../img/aboutme/IconB.svg");
       border: 1px solid rgba(250, 250, 250, 0.2);
       border-radius: 18px;
       padding: 9px;
@@ -468,7 +468,7 @@ text-align: left;
     }
   
     .ac-list.is-active>.my-header .my-button::after {
-      content: url("../img/aboutme/IconB.svg");
+      content: url("../img/aboutme/IconT.svg");
       border: 1px solid rgba(250, 250, 250, 0.2);
       border-radius: 18px;
       padding: 9px;
