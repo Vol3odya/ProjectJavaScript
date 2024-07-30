@@ -1,6 +1,7 @@
 .header {
   position: absolute;
-  padding-top: var(--pb-small);
+  /*padding-top: var(--pb-small);*/
+  top: 32px;
   width: 100%;
   background-color: transparent;
   z-index: 50;
@@ -23,7 +24,7 @@
 }
 
 .logo-text {
-  color: var(--main-text);
+  color: #fafafa;
 }
 
 /* btn */
@@ -41,12 +42,12 @@
   height: 28px;
   fill: transparent;
   stroke-width: 2px;
-  stroke: var(--main-text);
+  stroke: #fafafa;
 }
 
 .open-burger {
-  display: flex;
-  align-items: flex-start;
+  /*display: flex;
+  align-items: flex-start;*/
 }
 
 /* nav */
