@@ -1,7 +1,58 @@
-<section class="worktogether">
+<footer class="worktogether" id="worktogether">
   <div class="container">
-    <p>Worktogether</p>
+    <div class="footer-wrap">
+      <div class="footer-top">
+        <img
+          srcset="../img/worktogether/footer-image-tab_desk-2x.png 2x"
+          src="../img/worktogether/footer-image-tab_desk.png"
+          alt="Lloyd Jefferson"
+          class="footer-img"
+        />
+        <h2 class="footer-title">
+          Let's <span class="footer-span">work</span>
+        </h2>
+        <h2 class="footer-title">together</h2>
+      </div>
+      <form class="footer-form js-form">
+        <div class="input-wrapper">
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="footer-form-input"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
+          <div class="validation-message" id="email-validation-message"></div>
+        </div>
+
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="user-text"
+            id="user-text"
+            class="footer-form-input"
+            placeholder="comments"
+            required
+          />
+        </div>
+
+        <button type="submit" class="footer-form-btn js-modal-btn">Send</button>
+      </form>
+      <ul class="footer-contacts">
+        <li class="footer-contacts-item">
+          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="footer-contacts-item">
+          <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <div class="worktogether-bg"></div>
+</footer>
+
 
   <!-- Modal window -->
 
