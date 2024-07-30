@@ -182,12 +182,6 @@ text-align: left;
 
 .my-next:after {
   content: url("../img/reviews/arrow-narrow-right.svg");
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 18px;
-  width: 52px;
-  height: 52px;
-  margin-inline: 12px;
 }
 
 .skill-slide-active {
@@ -365,12 +359,6 @@ text-align: left;
 
         .my-next:after {
           content: url("../img/reviews/arrow-narrow-right.svg");
-          border: 1px solid rgba(250, 250, 250, 0.2);
-          border-radius: 60px;
-          padding: 18px;
-          width: 52px;
-          height: 52px;
-          margin-inline: 12px;
         }
 
   .skill-slide-active {
@@ -527,6 +515,7 @@ text-align: left;
     flex-direction: row;
     gap: 0;
     max-width: 1200px;
+
   }
 
   .skill-slide {
@@ -547,12 +536,6 @@ text-align: left;
 
     .my-next:after {
       content: url("../img/reviews/arrow-narrow-right.svg");
-      border: 1px solid rgba(250, 250, 250, 0.2);
-      border-radius: 60px;
-      padding: 18px;
-      width: 52px;
-      height: 52px;
-      margin-inline: 12px;
     }
 
   .skill-slide-active {
