@@ -1,7 +1,7 @@
 
 //Covers
-//import { coversSection, observer } from './js/covers.js';
-//observer.observe(coversSection);
+import { setupCoverAnimation } from './js/covers.js';
+setupCoverAnimation();
 
 
 //Reviews

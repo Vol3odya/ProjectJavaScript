@@ -87,11 +87,11 @@ text-align: left;
 
 @media screen and (min-width: 768px) and (max-width: 1439.9px) {
   .aboutme {
-    width: 704px;
+    /*width: 704px;*/
     height: 2312px;
     top: 1088px;
-    left: 32px;
-    gap: 64px;
+    /*left: 32px;*/
+    /*gap: 64px;*/
   }
   
   .about-list {
@@ -121,14 +121,20 @@ letter-spacing: -0.03em;
 text-align: left;
   }
 
+
   .text-about {
     text-transform: uppercase;
   }
+
+  /*.aboutme-img{
+    width: 704px;
+  }*/
 
   .about-list-conteiner {
     width: 704px;
     height: 700px;
     border-radius: 24px;
+    background: #242527;
   }
   
   .cv {
@@ -163,10 +169,10 @@ text-align: left;
 
 @media screen and (min-width: 1440px) {
   .aboutme {
-    width: 1376px;
+    /*width: 1376px;*/
     height: 1700px;
     top: 996px;
-    left: 32px;
+    /*left: 32px;*/
     gap: 96px;
   }
   
@@ -204,6 +210,7 @@ text-align: left;
     width: 680px;
     height: 700px;
     border-radius: 24px;
+    background: #242527;
   }
   
   .cv {
@@ -247,9 +254,9 @@ text-align: left;
   screen and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-    .aboutme-img {
+    /*.aboutme-img {
       src: url("./img/aboutme/hero-photo.jpg"), url("./img/aboutme/hero-photo@2x.jpg");
-    }
+    }*/
   }
 }
 
