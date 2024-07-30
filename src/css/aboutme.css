@@ -92,11 +92,11 @@ text-align: left;
 }
 
 .ac-list .my-button::after {
-  content: "A";
+  content: url("../img/aboutme/symbol-defs.svg#icon-IconT");
 }
 
 .ac-list.is-active>.my-header .my-button::after {
-  content: ">";
+  content: url("../img/aboutme/symbol-defs.svg#icon-IconB");
 }
 
 .ac-list {
@@ -228,6 +228,14 @@ text-align: left;
     margin-bottom: 20px;
   }
 
+    .ac-list .my-button::after {
+      content: url("../img/aboutme/symbol-defs.svg#icon-IconT");
+    }
+  
+    .ac-list.is-active>.my-header .my-button::after {
+      content: url("../img/aboutme/symbol-defs.svg#icon-IconB");
+    }
+
     .acc-container {
       padding: 0;
     }
@@ -357,6 +365,14 @@ text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+    .ac-list .my-button::after {
+      content: url("../img/aboutme/symbol-defs.svg#icon-IconT");
+    }
+  
+    .ac-list.is-active>.my-header .my-button::after {
+      content: url("../img/aboutme/symbol-defs.svg#icon-IconB");
+    }
 
   .ac-list{
     border: none;
