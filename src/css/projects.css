@@ -142,11 +142,12 @@ body {
 
 .project-button-prev,
 .project-button-next {
+    width: 52px;
+    height: 52px;
     /*border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 18px;
-    width: 52px;
-    height: 52px;
+    
     margin-inline: 12px;*/
 }
 
@@ -186,6 +187,12 @@ body {
         /*width: 704px;
         height: 1191px;
     }*/
+
+    .project-button-prev,
+    .project-button-next {
+        width: 68px;
+        height: 68px;
+    }
 
     .projects-languages-wrap {
         padding: 64px;
