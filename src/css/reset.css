@@ -1,7 +1,7 @@
 /* Reset styles */
 body {
   font-family: 'Inter Tight', sans-serif;
-  background-color: #1c1d20;
+  background-color: black;
 }
 
 h1,
@@ -35,3 +35,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
