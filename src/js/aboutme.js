@@ -12,7 +12,7 @@ export function aboutme() {
     loop: true,
     speed: 400,
     navigation: {
-      nextEl: '.swiper-button-next',
+      nextEl: '.my-next',
     },
     mousewheel: true,
     clickable: true,

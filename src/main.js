@@ -3,6 +3,12 @@ import { aboutme } from './js/aboutme.js';
 aboutme();
 
 
+
+//Projects
+import { swiperProjects } from './js/projects.js';
+swiperProjects();
+
+
 //Covers
 import { setupCoverAnimation } from './js/covers.js';
 setupCoverAnimation();

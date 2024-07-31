@@ -1,24 +1,11 @@
-import Swiper from 'swiper';
+//import Swiper from 'swiper';
 // import Swiper styles
-import 'swiper/css';
+//import 'swiper/css';
 
-export const swiper = new Swiper('.projects-js', {
-  //slidesPerView: 1,
-  //spaceBetween: 30,
-  breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-      1440: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-    },
+export const swiperProjects = () => {
+  const swiper = new Swiper('.projects-js', {
+  slidesPerView: 1,
+  spaceBetween: 30,
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -28,18 +15,32 @@ export const swiper = new Swiper('.projects-js', {
   //     clickable: true,
   //   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.project-button-next',
+    prevEl: '.project-button-prev',
   },
+  on: {
+      reachEnd: () => {
+        document.querySelector('.project-button-next').classList.add('disabled');
+      },
+      reachBeginning: () => {
+        document.querySelector('.project-button-prev').classList.add('disabled');
+      },
+      fromEdge: () => {
+        document.querySelector('.project-button-prev').classList.remove('disabled');
+        document.querySelector('.project-button-next').classList.remove('disabled');
+      },
+    },
 });
+}
 
-document.addEventListener('keydown', event => {
-  if (event.key === 'Tab') {
-    event.preventDefault();
-    if (event.shiftKey) {
-      swiper.slidePrev();
-    } else {
-      swiper.slideNext();
-    }
-  }
-});
+
+//document.addEventListener('keydown', event => {
+  //if (event.key === 'Tab') {
+    //event.preventDefault();
+    //if (event.shiftKey) {
+      //swiper.slidePrev();
+    //} else {
+      //swiper.slideNext();
+    //}
+  //}
+//});

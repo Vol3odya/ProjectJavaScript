@@ -34,8 +34,8 @@
 export const initializeSlider = () => {
   const swiper = new Swiper('.reviews-swiper', {
       navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.review-button-next',
+      prevEl: '.review-button-prev',
     },
     keyboard: {
       enabled: true,
@@ -57,14 +57,14 @@ export const initializeSlider = () => {
     },
     on: {
       reachEnd: () => {
-        document.querySelector('.swiper-button-next').classList.add('disabled');
+        document.querySelector('.review-button-next').classList.add('disabled');
       },
       reachBeginning: () => {
-        document.querySelector('.swiper-button-prev').classList.add('disabled');
+        document.querySelector('.review-button-prev').classList.add('disabled');
       },
       fromEdge: () => {
-        document.querySelector('.swiper-button-prev').classList.remove('disabled');
-        document.querySelector('.swiper-button-next').classList.remove('disabled');
+        document.querySelector('.review-button-prev').classList.remove('disabled');
+        document.querySelector('.review-button-next').classList.remove('disabled');
       },
     },
   });
