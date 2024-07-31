@@ -1,11 +1,6 @@
-
 //Aboutme
 import { aboutme } from './js/aboutme.js';
 aboutme();
-
-
-//Projects
-
 
 
 //Covers
