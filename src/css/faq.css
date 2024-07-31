@@ -41,6 +41,10 @@
   width: 34px;
   height: 34px;
   display: inline;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
 }
 
 .faq-ac .faq-ac-trigger::after {
@@ -66,7 +70,7 @@
 }
 
 .faq-text{
-
+  max-width: 290px;
 }
 
 .faq-ac-panel {
