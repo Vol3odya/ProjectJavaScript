@@ -99,7 +99,6 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && modalWindow.classList.contains('is-open')) {
       modalWindow.classList.remove('is-open');
       document.body.style.overflow = 'auto';
-      console.log("1314234433434");
   }
 });
 
@@ -110,9 +109,8 @@ function eventHandler(e) {
 }
 
 function modalWindowClose(e) {
-    console.log("jsdhfjdfbvjhb");
-  const modalClose = e.target.closest('.js-modal-close');
-  if (e.target === (modalWindow || modalClose)) {
+    const modalClose = e.target.closest('.js-modal-close');//document.querySelector('.js-modal-close');//
+  if (e.target === modalWindow || modalClose) {
     modalWindow.classList.remove('is-open');
     document.body.style.overflow = 'auto';
   }

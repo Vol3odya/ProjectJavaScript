@@ -144,12 +144,12 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.modal-overlay .is-open-header {
+.is-open-header {
   opacity: 1;
   pointer-events: auto;
 }
 
-.modal-overlay .is-open-header .modal-header {
+.modal-header {
   transform: translateX(0);
 }
 
@@ -202,7 +202,7 @@
   bottom: 64px;
 }
 
-.order-mobile {
+/*.order-mobile {
   display: block;
   border-radius: 60px;
   background: var(--akcent-collor);
@@ -217,7 +217,7 @@
   color: #fafafa;
 }
 
-.order-mobile:hover, .order-mobile:focus{
+/*.order-mobile:hover, .order-mobile:focus{
   color: var(--aсcent-collor-hover);
   transition: var(--trns);
 }

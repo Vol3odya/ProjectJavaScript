@@ -134,7 +134,7 @@ form.addEventListener('submit', async (event) => {
     } else {
         const errorData = await response.json();
         emailValidationMessage.textContent = errorData.message || 'An error occurred. Please try again.';
-        console.log("kcn djfhbjgfhbghbfjdhbdhgbdjvnbhg");
+        
         emailValidationMessage.classList.add('error');
         emailInputWrapper.classList.remove('success');
         emailInputWrapper.classList.add('error');
