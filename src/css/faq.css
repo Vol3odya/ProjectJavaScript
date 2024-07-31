@@ -18,7 +18,10 @@
   height: 40px;
 }
 
-.faq-ac {}
+.faq-ac {
+  border: none;
+  margin: 0;
+}
 
 .faq-ac-header {
   font-weight: 600;
