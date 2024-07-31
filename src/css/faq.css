@@ -20,14 +20,20 @@
   margin: 0;
 }
 
+.faq-ac .faq-ac-header{
+  padding-top: 20px;
+}
+
+.faq-ac .faq-ac-panel .faq-ac-text {
+  margin-bottom: 20px;
+}
+
 .faq-ac-header {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.02em;
   background-color: #1c1d20;
-  /*max-width: 300px;*/
-  padding-top: 20px;
 }
 
 .faq-ac-trigger {
@@ -68,7 +74,6 @@
 
 .faq-ac-panel {
   background-color: #1c1d20;
-  padding-bottom: 20px;
 }
 
 .faq-ac-text {
