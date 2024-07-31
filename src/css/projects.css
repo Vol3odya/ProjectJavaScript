@@ -133,11 +133,12 @@ body {
 
 .project-wrap{
     width: 156px;
+    height: 58px;
     margin: 0 auto;
     display: flex;
     margin-top: 32px;
     position: relative;
-    margin-bottom: 64px;
+    /*margin-bottom: 64px;*/
 }
 
 .project-button-prev,
@@ -191,6 +192,10 @@ body {
         /*width: 704px;
         height: 1191px;
     }*/
+
+    .project-wrap {
+        height: 68px;
+    }
 
     .project-button-prev:after{
         width: 68px;
