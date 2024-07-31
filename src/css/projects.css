@@ -153,10 +153,14 @@ body {
 
 .project-button-prev:after {
     content: url("../img/projects/left-icon.svg");
+    width: 52px;
+    height: 52px;
 }
 
 .project-button-next:after {
     content: url("../img/projects/right-icon.svg");
+    width: 52px;
+    height: 52px;
 }
 
 :root {
@@ -188,8 +192,12 @@ body {
         height: 1191px;
     }*/
 
-    .project-button-prev,
-    .project-button-next {
+    .project-button-prev:after{
+        width: 68px;
+        height: 68px;
+    }
+    
+    .project-button-next:after {
         width: 68px;
         height: 68px;
     }
