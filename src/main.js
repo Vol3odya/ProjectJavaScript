@@ -32,6 +32,10 @@ aboutme();
 import { swiperProjects } from './js/projects.js';
 swiperProjects();
 
+//FAQ
+import { faq } from './js/faq.js';
+faq();
+
 
 //Covers
 import { setupCoverAnimation } from './js/covers.js';

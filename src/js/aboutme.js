@@ -56,10 +56,10 @@ export function aboutme() {
   //const swiper = document.querySelector('.swiper');
 
 
-  const accordion = document.querySelector('.accordion-container')
+  const accordion = document.querySelector('.acc-container')
   //console.log(accordion);
 
-  const accordions = Array.from(document.querySelectorAll('.accordion-container'));
+  const accordions = Array.from(document.querySelectorAll('.acc-container'));
   new Accordion(accordions, {
     duration: 600,
     showMultiple: true,
