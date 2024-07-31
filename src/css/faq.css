@@ -47,7 +47,7 @@
   letter-spacing: -0.02em;
 }
 
-.faq-ac .faq-ac-trigger::after {
+.faq-ac .faq-text::after {
   content: url("../img/faq/icon.svg#icon-iconB");
   margin-right: 0;
   margin-top: 0;
@@ -55,7 +55,7 @@
   height: 34px;
 }
 
-.faq-ac.is-active>.faq-ac-header .faq-ac-trigger::after {
+.faq-ac.is-active>.faq-ac-header .faq-text::after {
   content: url("../img/faq/icon.svg#icon-iconT");
   margin-right: 0;
   margin-top: 0;
