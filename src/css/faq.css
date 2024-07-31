@@ -19,7 +19,8 @@
 }
 
 .faq-ac {
-  border: none;
+  border-left: none;
+  border-right: none;
   margin: 0;
 }
 
