@@ -9,7 +9,7 @@ const modalClsBody = document.querySelector('body');
 //burgerOpen.addEventListener('click', openModalWindow);
 
 export function openModalWindow() {
-    modalOverlay.classList.add('.is-open');
+    modalOverlay.classList.add('.is-open-header');
     burgerOpen.style.opacity = 'none';
     modalClsBody.style.overflow = '';
     console.log("aaaaa");
@@ -18,7 +18,7 @@ export function openModalWindow() {
 //btnClose.addEventListener('click', closeModalWindow);
 
 export function closeModalWindow() {
-    modalOverlay.classList.remove('is-open');
+    modalOverlay.classList.remove('is-open-header');
     burgerOpen.style.opacity = '';
     modalClsBody.style.opacity = '';
 }
@@ -31,17 +31,17 @@ export function NavvMenu(evt) {
         return;
     }
     else {
-        modalOverlay.classList.remove('is-open');
+        modalOverlay.classList.remove('is-open-header');
         burgerOpen.style.opacity = '';
         modalClsBody.style.overflow = '';
     }
 }
 
-//mobileOrderBtn.addEventListener('click', linkToFooter);
+mobileOrderBtn.addEventListener('click', linkToFooter);
 
 export function linkToFooter(evt) {
     evt.preventDefault();
-    modalOverlay.classList.remove('is-open');
+    modalOverlay.classList.remove('is-open-header');
     burgerOpen.style.opacity = '';
     modalClsBody.style.overflow = '';
 
@@ -54,7 +54,7 @@ setTimeout(() => {
 
 export function NavMenu(evt) {
     if (evt.target.tagName === 'A') {
-        modalOverlay.classList.remove('is-open');
+        modalOverlay.classList.remove('is-open-header');
         burgerOpen.style.opacity ='';
         modalClsBody.style.overflow = '';
 

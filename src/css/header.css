@@ -144,12 +144,12 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.modal-overlay .is-open {
+.modal-overlay .is-open-header {
   opacity: 1;
   pointer-events: auto;
 }
 
-.modal-overlay .is-open .modal-header {
+.modal-overlay .is-open-header .modal-header {
   transform: translateX(0);
 }
 
@@ -277,7 +277,7 @@
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .btn-wrapper {
       display: flex;
       flex-wrap: nowrap;

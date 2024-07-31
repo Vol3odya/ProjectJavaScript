@@ -11,92 +11,95 @@
         return emailPattern.test(email);
     };
     
-    emailInput.addEventListener('focus', () => {
-        emailInputWrapper.classList.add('focused');
-    });
+    //emailInput.addEventListener('focus', () => {
+        //emailInputWrapper.classList.add('focused');
+    //});
 
-    emailInput.addEventListener('blur', () => {
-        emailInputWrapper.classList.remove('focused');
-    });
+    //emailInput.addEventListener('blur', () => {
+        //emailInputWrapper.classList.remove('focused');
+    //});
 
-    emailInput.addEventListener('input', () => {
-        if (validateEmail(emailInput.value)) {
-            emailValidationMessage.textContent = "Success!";
-            emailValidationMessage.classList.remove('error');
-            emailInputWrapper.classList.remove('error');
-            emailInputWrapper.classList.add('success');
-        } else {
-            emailValidationMessage.textContent = "Invalid email, try again";
-            emailValidationMessage.classList.add('error');
-            emailInputWrapper.classList.remove('success');
-            emailInputWrapper.classList.add('error');
-        }
-    });
+   // emailInput.addEventListener('input', () => {
+        //if (validateEmail(emailInput.value)) {
+            //emailValidationMessage.textContent = "Success!";
+            //emailValidationMessage.classList.remove('error');
+            //emailInputWrapper.classList.remove('error');
+            //emailInputWrapper.classList.add('success');
+        //} else {
+            //emailValidationMessage.textContent = "Invalid email, try again";
+            //emailValidationMessage.classList.add('error');
+            //emailInputWrapper.classList.remove('success');
+            //emailInputWrapper.classList.add('error');
+        //}
+    //});
     
-    textInput.addEventListener('focus', () => {
-        textInputWrapper.classList.add('focused');
-    });
+    //textInput.addEventListener('focus', () => {
+        //textInputWrapper.classList.add('focused');
+    //});
 
-    textInput.addEventListener('blur', () => {
-        textInputWrapper.classList.remove('focused');
-    });
+    //textInput.addEventListener('blur', () => {
+        //textInputWrapper.classList.remove('focused');
+    //});
 
     
-    form.addEventListener('submit', async (event) => {
-        event.preventDefault();
+    //form.addEventListener('submit', async (event) => {
+        //event.preventDefault();
 
-        if (!validateEmail(emailInput.value)) {
-            emailValidationMessage.textContent = "Invalid email, try again";
-            emailValidationMessage.classList.add('error');
-            emailInputWrapper.classList.remove('success');
-            emailInputWrapper.classList.add('error');
-            return;
-        }
+        //if (!validateEmail(emailInput.value)) {
+            //emailValidationMessage.textContent = "Invalid email, try again";
+            //emailValidationMessage.classList.add('error');
+            //emailInputWrapper.classList.remove('success');
+            //emailInputWrapper.classList.add('error');
+            //return;
+        //}
 
-        const formData = {
-            email: emailInput.value,
-            text: textInput.value
-        };
+        //const formData = {
+            //email: emailInput.value,
+            //text: textInput.value
+        //};
 
-        try {
-        const response = await fetch('https://portfolio-js.b.goit.study/api-docs', {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
+        //try {
+        //const response = await fetch('https://portfolio-js.b.goit.study/api-docs', {
+            //method: 'POST',
+            //headers: {
+            //'Content-Type': 'application/json'
+            //},
+            //body: JSON.stringify(formData)
+        //});
 
-        if (response.ok) {
+        //if (response.ok) {
             // alert('Ваш запит був успішно надісланий.');
-            emailValidationMessage.textContent = "Success!";
-            emailValidationMessage.classList.remove('error');
-            emailInputWrapper.classList.remove('error');
-            emailInputWrapper.classList.add('success');
-            form.reset();
-            emailValidationMessage.textContent = '';
-            emailInputWrapper.classList.remove('success');
-        } else {
-            const errorData = await response.json();
-            emailValidationMessage.textContent = errorData.message || 'An error occurred. Please try again.';
-            emailValidationMessage.classList.add('error');
-            emailInputWrapper.classList.remove('success');
-            emailInputWrapper.classList.add('error');
-        }
-        } catch (error) {
-            emailValidationMessage.textContent = 'An error occurred. Please check your input and try again.';
-            emailValidationMessage.classList.add('error');
-            emailInputWrapper.classList.remove('success');
-            emailInputWrapper.classList.add('error');
-        }
-    });
+            //emailValidationMessage.textContent = "Success!";
+            //emailValidationMessage.classList.remove('error');
+            //emailInputWrapper.classList.remove('error');
+            //emailInputWrapper.classList.add('success');
+            //form.reset();
+            //emailValidationMessage.textContent = '';
+            //emailInputWrapper.classList.remove('success');
+        //} else {
+            //const errorData = await response.json();
+            //emailValidationMessage.textContent = errorData.message || 'An error occurred. Please try again.';
+            //emailValidationMessage.classList.add('error');
+            //emailInputWrapper.classList.remove('success');
+            //emailInputWrapper.classList.add('error');
+        //}
+        //} catch (error) {
+            //emailValidationMessage.textContent = 'An error occurred. Please check your input and try again.';
+            //emailValidationMessage.classList.add('error');
+            //emailInputWrapper.classList.remove('success');
+            //emailInputWrapper.classList.add('error');
+        //}
+    //});
 
-const feedbackForm = document.querySelector('.js-feedback-form');
+const feedbackForm = document.querySelector('.js-form');
 const modalWindow = document.querySelector('.js-modal-backdrop');
+//const btnClosed = document.querySelector('.js-modal-close');
 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && modalWindow.classList.contains('is-open')) {
-    modalWindow.classList.remove('is-open');
+      modalWindow.classList.remove('is-open');
+      document.body.style.overflow = 'auto';
+      console.log("1314234433434");
   }
 });
 
@@ -107,9 +110,9 @@ function eventHandler(e) {
 }
 
 function modalWindowClose(e) {
+    console.log("jsdhfjdfbvjhb");
   const modalClose = e.target.closest('.js-modal-close');
-
-  if (e.target === modalWindow || modalClose) {
+  if (e.target === (modalWindow || modalClose)) {
     modalWindow.classList.remove('is-open');
     document.body.style.overflow = 'auto';
   }

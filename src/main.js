@@ -55,6 +55,7 @@ import { validateEmail } from './js/worktogether';
 
 feedbackForm.addEventListener('submit', eventHandler);
 modalWindow.addEventListener('click', modalWindowClose);
+//btnClosed.addEventListener('click', modalWindowClose);
 const form = document.querySelector('.js-form');
 const emailInput = document.getElementById('user-email');
 const textInput = document.getElementById('user-text');
