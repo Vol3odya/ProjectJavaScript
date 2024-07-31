@@ -1,7 +1,13 @@
 /* Reset styles */
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
-  background-color: black;
+  background-color: #1c1d20;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -28,6 +34,8 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0;
+  background: none;
 }
 
 img {
@@ -36,3 +44,11 @@ img {
   height: auto;
 }
 
+picture{
+  padding: 0;
+}
+
+source{
+  padding: 0;
+  max-height: 0;
+}

@@ -1,25 +1,83 @@
 <header class="header">
-    <div class="container">
-      <div class="header-wrapper">
-        <div class="logo-wrapper">
-          <a href="" class="logo-link">
-            <svg class="logo-icon">
-  
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="header-nav-wrapper">
-        <nav class="header-menu">
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a href="#menu" class="header-menu-link">menu</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#order">
-          <button type="button" class="header-btn">See project</button>
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="logo-wrapper">
+        <a href="./index.html" class="image-wrapper">
+          <img src="./img/header/logo2.png" alt="logo" width="80" height="80" />
+          <p class="logo-text">jefferson*</p>
         </a>
       </div>
+      
+      
+      <!-- Menu -->
+
+      <nav class="nav-menu">
+        <input type="checkbox" class="custom-checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-button" aria-label="Open menu">Menu</label>
+        <ul class="menu-list">
+          <li class="menu-list-item" aria-label="To About me">
+            <a href="#aboutme-section">About me</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#benefits-section" aria-label="To Benefits">Benefits</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#projects-section" aria-label="To Projects">Projects</a>
+          </li>
+          <li class="menu-list-item" aria-label="To FAQ">
+            <a href="#faq-section">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+     
+      <div class="btn-wrapper">
+        <a href="#worktogether" class="order-btn">Order the project</a>
+      </div>
+
+
+      <button class="open-burger" aria-label="close window">
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/header/header-svg.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+
+      <!-- Menu Mob -->
+
+      <div class="modal-overlay">
+        <div class="modal-header">
+          <nav class="navigation-modal">
+            <ul class="nav-list">
+              <li class="nav-item">
+
+                <a href="#aboutme-section" class="modal-text" aria-label="To About me" >About me</a>
+
+              </li>
+              <li class="nav-item">
+                <a href="#benefits-section" class="modal-text" aria-label="To Benefits">Benefits</a>
+
+              </li>
+              <li class="nav-item">
+                <a href="#projects-section" class="modal-text" aria-label="To Project">Projects</a>
+ 
+              </li>
+              <li class="nav-item">
+                <a href="#faq-section" class="modal-text" aria-label="To FAQ">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#worktogether" class="modal-link-to-footer order-mobile" aria-label="To Work together">Order the project</a>
+        </div>
+        
+        <button type="button" class="close-btn" aria-label="close modal window">
+          <svg width="28" height="28" class="modal-close-btn">
+            <use href="./img/header/header-svg.svg#icon-close"></use>
+          </svg>
+        </button>
+
     </div>
-   </header> 
+  </div>
+</header>
+
+
+<!--<script type="module" src="./js/header.js"></script>-->
