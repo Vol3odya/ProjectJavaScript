@@ -97,12 +97,22 @@
 
 @media screen and (min-width: 1440px) {
   .faq-accordion-container{
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
+    flex-direction: column;*/
+    /*columns: 2;
+    align-content:center;
+    justify-content:flex-end;*/
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 688px 688px;
   }
 
   .faq-ac{
     width: 688px;
+    display: inline-block;
+    flex-grow: 1;
   }
 
   .faq-border{
