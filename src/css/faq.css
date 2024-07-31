@@ -48,7 +48,7 @@
 }
 
 .faq-ac .faq-text::after {
-  content: url("../img/faq/icon.svg#icon-iconB");
+  content: url("../img/faq/iconB.svg");
   margin-right: 0;
   margin-top: 0;
   width: 34px;
@@ -56,7 +56,7 @@
 }
 
 .faq-ac.is-active>.faq-ac-header .faq-text::after {
-  content: url("../img/faq/icon.svg#icon-iconT");
+  content: url("../img/faq/iconT.svg");
   margin-right: 0;
   margin-top: 0;
   width: 34px;
