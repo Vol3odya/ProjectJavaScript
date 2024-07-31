@@ -86,6 +86,11 @@
 
 @media screen and (min-width: 768px) {
   .faq-text {
-      max-width: 574px;
+      max-width: 650px;
+    }
+
+    .faq-ac-trigger {
+      width: 40px;
+      height: 40px;
     }
 }
