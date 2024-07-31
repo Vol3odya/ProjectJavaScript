@@ -1,6 +1,6 @@
 //Header
 import { openModalWindow, closeModalWindow, NavvMenu, linkToFooter, NavMenu } from './js/header.js';
-const burgerOpen = document.querySelector('.open-burger');
+const burgerOpen = document.querySelector('.menu-button');
 burgerOpen.addEventListener('click', openModalWindow);
 const btnClose = document.querySelector('.close-btn');
 btnClose.addEventListener('click', closeModalWindow);
@@ -134,7 +134,7 @@ form.addEventListener('submit', async (event) => {
     } else {
         const errorData = await response.json();
         emailValidationMessage.textContent = errorData.message || 'An error occurred. Please try again.';
-        
+
         emailValidationMessage.classList.add('error');
         emailInputWrapper.classList.remove('success');
         emailInputWrapper.classList.add('error');

@@ -9,9 +9,10 @@ const modalClsBody = document.querySelector('body');
 //burgerOpen.addEventListener('click', openModalWindow);
 
 export function openModalWindow() {
-    modalOverlay.classList.add('.is-open-header');
+    modalOverlay.classList.add('is-open-header');
     burgerOpen.style.opacity = 'none';
     modalClsBody.style.overflow = '';
+    //document.body.style.overflow = 'hidden';
     console.log("aaaaa");
 }
 
