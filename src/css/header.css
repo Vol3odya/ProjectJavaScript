@@ -128,7 +128,7 @@
   transition: opacity 250ms ease-in-out;
 }
 
-.modal {
+.modal-header {
   background-color: transparent;
   width: 100%;
   max-width: 375px;
@@ -144,12 +144,12 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.modal-overlay.is-open {
+.modal-overlay .is-open {
   opacity: 1;
   pointer-events: auto;
 }
 
-.modal-overlay.is-open .modal {
+.modal-overlay .is-open .modal-header {
   transform: translateX(0);
 }
 

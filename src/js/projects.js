@@ -5,7 +5,7 @@
 export const swiperProjects = () => {
   const swiper = new Swiper('.projects-js', {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
   keyboard: {
     enabled: true,
     onlyInViewport: false,

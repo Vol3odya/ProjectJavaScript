@@ -1,3 +1,27 @@
+//Header
+import { openModalWindow, closeModalWindow, NavvMenu, linkToFooter, NavMenu } from './js/header.js';
+const burgerOpen = document.querySelector('.open-burger');
+burgerOpen.addEventListener('click', openModalWindow);
+const btnClose = document.querySelector('.close-btn');
+btnClose.addEventListener('click', closeModalWindow);
+const navList = document.querySelector('.nav-list');
+navList.addEventListener('click', NavvMenu);
+const mobileOrderBtn = document.querySelector('.order-mobile');
+mobileOrderBtn.addEventListener('click', linkToFooter);
+navList.addEventListener('click', NavMenu);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItm = document.querySelectorAll('.custom-list .menu-list-item a');
+    const check = document.getElementById('menu-toggle');
+
+    menuItm.forEach(item => {
+        item.addEventListener('click', () => {
+            check.checked = false;
+        });
+    });
+});
+
+
 //Aboutme
 import { aboutme } from './js/aboutme.js';
 aboutme();
