@@ -13,11 +13,6 @@
 
 .faq-accordion-container {}
 
-.faq-line{
-  width: 343px;
-  height: 40px;
-}
-
 .faq-ac {
   border-color: rgba(250, 250, 250, 0.4);
   border-left: none;
@@ -32,7 +27,7 @@
   letter-spacing: -0.02em;
   background-color: #1c1d20;
   /*max-width: 300px;*/
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .faq-ac-trigger {
@@ -73,6 +68,7 @@
 
 .faq-ac-panel {
   background-color: #1c1d20;
+  padding-bottom: 20px;
 }
 
 .faq-ac-text {
@@ -80,5 +76,4 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  margin-bottom: 20px;
 }
