@@ -6,7 +6,7 @@ const navList = document.getElementById('.nav-list');
 const modalClsBody = document.getElementById('body');
 
 
-//burgerOpen.addEventListener('click', openModalWindow);
+burgerOpen.addEventListener('click', openModalWindow);
 
 function openModalWindow() {
     modalOverlay.classList.add('is-open');
