@@ -1,9 +1,9 @@
-    const form = document.querySelector('.js-form');
-    const emailInput = document.getElementById('user-email');
-    const textInput = document.getElementById('user-text');
-    const emailValidationMessage = document.getElementById('email-validation-message');
-    const emailInputWrapper = emailInput.parentElement;
-    const textInputWrapper = textInput.parentElement;
+    //const form = document.querySelector('.js-form');
+    //const emailInput = document.getElementById('user-email');
+    //const textInput = document.getElementById('user-text');
+    //const emailValidationMessage = document.getElementById('email-validation-message');
+    //const emailInputWrapper = emailInput.parentElement;
+    //const textInputWrapper = textInput.parentElement;
 
 
     export function validateEmail(email) {
