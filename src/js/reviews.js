@@ -32,7 +32,7 @@
   };
 
 export const initializeSlider = () => {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.reviews-swiper', {
       navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

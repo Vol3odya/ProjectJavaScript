@@ -53,6 +53,8 @@ body {
 .projects-item {
     background: #fafafa;
     border-radius: 24px;
+    margin-top: 32px;
+    padding: 0;
 }
 
 .projects-title {
@@ -135,6 +137,7 @@ body {
     display: flex;
     margin-top: 32px;
     position: relative;
+    margin-bottom: 64px;
 }
 
 .project-button-prev,
@@ -178,10 +181,11 @@ body {
         padding-left: calc(50% - 352px);
     }*/
 
-    .projects-item{
-        min-width: 704px;
+    
+    /*.projects-item{
+        /*width: 704px;
         height: 1191px;
-    }
+    }*/
 
     .projects-languages-wrap {
         padding: 64px;
@@ -202,6 +206,11 @@ body {
 
     .projects-image-wrap {
         padding: 120px 45px;
+    }
+
+    .projects-image{
+        width: 614px;
+        height: 385px;
     }
 }
 
