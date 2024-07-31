@@ -64,6 +64,10 @@
   height: 34px;
 }
 
+.faq-text{
+  position: relative;
+}
+
 .faq-ac-panel {
   background-color: #1c1d20;
 }
