@@ -11,6 +11,7 @@ export function aboutme() {
   
     loop: true,
     speed: 400,
+    spaceBetween: 0,
     navigation: {
       nextEl: '.my-next',
     },
@@ -29,15 +30,12 @@ export function aboutme() {
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 16,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 16,
       },
       1440: {
         slidesPerView: 6,
-        spaceBetween: 16,
       },
     },
     on: {
