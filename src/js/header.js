@@ -13,7 +13,6 @@ export function openModalWindow() {
     burgerOpen.style.opacity = 'none';
     modalClsBody.style.overflow = '';
     //document.body.style.overflow = 'hidden';
-    console.log("aaaaa");
 }
 
 //btnClose.addEventListener('click', closeModalWindow);
