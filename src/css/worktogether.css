@@ -105,11 +105,11 @@
     background-color: #fafafa;
 }
 
-.input-wrapper::after, .success::after {
+.input-wrapper.success::after {
     background-color: #3cbc81;
 }
 
-.error::after {
+.input-wrapper.error::after {
     background-color: #e74a3b;
 }
 
@@ -178,7 +178,7 @@ input[type="email"], input[type="text"] {
     text-align: left;
 }
 
-.error {
+.validation-message.error {
     color: #e74a3b;
 }
 
