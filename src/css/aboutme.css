@@ -348,35 +348,46 @@ text-align: left;
     }
   
     .skills-conteiner {
-      margin-top: 88px;
-      width: 704px;
+      margin-top: 64px;
+      width: 600px;
       height: 200px;
       min-width: 0;
     }
   
+    .container>.swiper {
+      margin-left: 0;
+    }
+
     .skills {
       width: 600px;
       height: 200px;
-      display: flex;
-      flex-direction: row;
-      gap: 0;
       max-width: 600px;
     }
   
     .skill-slide {
       max-width: 200px;
       height: 200px;
-      border-radius: 50%;
-      display: flex;
       text-align: center;
-      justify-content: center;
-      /*align-items: center;*/
+      border-radius: 50%;
       background-color: rgba(36, 37, 39, 1);
       border-color: rgba(250, 250, 250, 0.2);
       border: 1px;
       padding-top: 88px;
       margin-left: 0;
       margin-right: 0;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .my-next {
+      margin-top: 144px;
+      margin-right: 0;
+      position: relative;
+      width: 40px;
+      height: 40px;
     }
 
         .my-next:after {
@@ -512,38 +523,48 @@ text-align: left;
       padding-right: 40px;
     }
 
-  .skills-conteiner{
-    margin-top: 88px;
-    width: 1312px;
-    height: 200px;
-    min-width: 0;
-  }
-  
-  .skills {
-    width: 1200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    max-width: 1200px;
-
-  }
-
-  .skill-slide {
-    max-width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    /*align-items: center;*/
-    background-color: rgba(36, 37, 39, 1);
-    border-color: rgba(250, 250, 250, 0.2);
-    border: 1px;
-    padding-top: 88px;
-    margin-left: 0;
-    margin-right: 0;
-  }
+        .skills-conteiner {
+          margin-top: 64px;
+          width: 1200px;
+          height: 200px;
+          min-width: 0;
+        }
+    
+        .container>.swiper {
+          margin-left: 0;
+        }
+    
+        .skills {
+          width: 1200px;
+          height: 200px;
+          max-width: 1200px;
+        }
+    
+        .skill-slide {
+          max-width: 200px;
+          height: 200px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: rgba(36, 37, 39, 1);
+          border-color: rgba(250, 250, 250, 0.2);
+          border: 1px;
+          padding-top: 88px;
+          margin-left: 0;
+          margin-right: 0;
+        }
+    
+        .flex {
+          display: flex;
+          flex-wrap: wrap;
+        }
+    
+        .my-next {
+          margin-top: 144px;
+          margin-right: 0;
+          position: relative;
+          width: 40px;
+          height: 40px;
+        }
 
   .my-next:after {
     content: url("../img/reviews/arrow-narrow-right.svg");
