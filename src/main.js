@@ -23,8 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //Aboutme
-import { aboutme } from './js/aboutme.js';
+import { aboutme, aboutSwiper } from './js/aboutme.js';
 aboutme();
+aboutSwiper();
 
 
 

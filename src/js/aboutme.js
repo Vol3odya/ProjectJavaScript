@@ -6,23 +6,13 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
-export function aboutme() {
-  new Swiper('.skills-conteiner', {
+
   
-    loop: true,
-    speed: 400,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: '.my-next',
+export const aboutSwiper = () => {
+  const swiper = new Swiper('.reviews-swiper', {
+      navigation: {
+      nextEl: '.review-button-next',
     },
-    mousewheel: true,
-    clickable: true,
-    //scrollbar: {
-    //el: '.swiper-scrollbar',
-    //touchRatio: 1,
-    //touchAngle: 45,
-    //grabCursor: true,
-    //},
     keyboard: {
       enabled: true,
       onlyInViewport: false,
@@ -30,32 +20,74 @@ export function aboutme() {
     breakpoints: {
       320: {
         slidesPerView: 2,
+        spaceBetween: 0,
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 0,
       },
       1440: {
         slidesPerView: 6,
+        spaceBetween: 0,
       },
     },
     on: {
       slideChange: function (swiper) {
-        let activeIndex = swiper.realIndex
-        let cards = document.querySelectorAll('.skill-slide');
-        cards.forEach((item, index) => {
-          if (index === activeIndex) {
-            item.classList.add('skill-slide-active');
-          } else {
-            item.classList.remove('skill-slide-active')
-          }
-        });
-      }
+          let activeIndex = swiper.realIndex
+          let cards = document.querySelectorAll('.skill-slide');
+          cards.forEach((item, index) => {
+            if (index === activeIndex) {
+              item.classList.add('skill-slide-active');
+            } else {
+              item.classList.remove('skill-slide-active')
+            }
+          });
+        }
     },
   });
+};
+
+const initializeSlider = () => {
+    new Swiper('.skills-conteiner', {
+  
+      loop: true,
+      speed: 400,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: '.my-next',
+      },
+      mousewheel: true,
+      clickable: true,
+      //scrollbar: {
+      //el: '.swiper-scrollbar',
+      //touchRatio: 1,
+      //touchAngle: 45,
+      //grabCursor: true,
+      //},
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1440: {
+          slidesPerView: 6,
+        },
+      },
+      on: {
+        
+      },
+    });
+  }
 
   //const swiper = document.querySelector('.swiper');
 
-
+export function aboutme() {
   const accordion = document.querySelector('.acc-container')
   //console.log(accordion);
 
