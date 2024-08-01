@@ -9,10 +9,14 @@ import 'swiper/css/navigation';
 
   
 export const aboutSwiper = () => {
-  const swiper = new Swiper('.reviews-swiper', {
+  const swiper = new Swiper('.skills-conteiner', {
       navigation: {
-      nextEl: '.review-button-next',
+      nextEl: '.my-next',
     },
+    loop: true,
+    speed: 400,
+    mousewheel: true,
+    clickable: true,
     keyboard: {
       enabled: true,
       onlyInViewport: false,
@@ -47,43 +51,6 @@ export const aboutSwiper = () => {
   });
 };
 
-const initializeSlider = () => {
-    new Swiper('.skills-conteiner', {
-  
-      loop: true,
-      speed: 400,
-      spaceBetween: 0,
-      navigation: {
-        nextEl: '.my-next',
-      },
-      mousewheel: true,
-      clickable: true,
-      //scrollbar: {
-      //el: '.swiper-scrollbar',
-      //touchRatio: 1,
-      //touchAngle: 45,
-      //grabCursor: true,
-      //},
-      keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1440: {
-          slidesPerView: 6,
-        },
-      },
-      on: {
-        
-      },
-    });
-  }
 
   //const swiper = document.querySelector('.swiper');
 
