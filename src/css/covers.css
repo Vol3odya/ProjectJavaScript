@@ -2,7 +2,7 @@
 
  .cover-section {
      padding-top: 32px;
-     padding-bottom: 32px;
+    /*padding-bottom: 32px;*/
      position: relative;
  }
 
@@ -67,7 +67,7 @@
  @media screen and (min-width: 768px) {
      .cover-section {
          padding-top: 48px;
-         padding-bottom: 48px;
+         /*padding-bottom: 48px;*/
      }
 
      .cover-container {
@@ -96,7 +96,7 @@
  @media screen and (min-width: 1440px) {
      .cover-section {
          padding-top: 82px;
-         padding-bottom: 82px;
+         /*padding-bottom: 82px;*/
      }
 
      .cover-container {
