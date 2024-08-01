@@ -35,22 +35,22 @@ export const aboutSwiper = () => {
         spaceBetween: 0,
       },
     },
-    on: {
-      slideChange: function (swiper) {
-        let activeIndex = swiper.realIndex;
-          let cards = document.querySelectorAll('.skill-slide');
-        cards.forEach((item, index) => {
+    //on: {
+      //slideChange: function (swiper) {
+        //let activeIndex = swiper.realIndex;
+          //let cards = document.querySelectorAll('.skill-slide');
+        //cards.forEach((item, index) => {
           //if (index == 6) {
             //index = -1;
           //}
-          if (index == activeIndex) {
-              item.classList.add('skill-slide-active');
-            } else {
-              item.classList.remove('skill-slide-active')
-            }
-          });
-        }
-    },
+          //if (index == activeIndex) {
+              //item.classList.add('skill-slide-active');
+            //} else {
+              //item.classList.remove('skill-slide-active')
+            //}
+          //});
+        //}
+    //},
   });
 };
 
