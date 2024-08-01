@@ -11,10 +11,10 @@ export function setupCoverAnimation() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           coversSection.classList.add('animate');
-          console.log('Animation added');
+          //console.log('Animation added');
         } else {
           coversSection.classList.remove('animate');
-          console.log('Animation removed');
+          //console.log('Animation removed');
         }
       });
     };
