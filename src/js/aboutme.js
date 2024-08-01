@@ -38,14 +38,12 @@ export const aboutSwiper = () => {
     on: {
       slideChange: function (swiper) {
         let activeIndex = swiper.realIndex;
-        console.log(activeIndex);
           let cards = document.querySelectorAll('.skill-slide');
         cards.forEach((item, index) => {
           //if (index == 6) {
             //index = -1;
           //}
           if (index == activeIndex) {
-            console.log("2)", index);
               item.classList.add('skill-slide-active');
             } else {
               item.classList.remove('skill-slide-active')
