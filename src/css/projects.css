@@ -138,6 +138,7 @@ body {
     display: flex;
     margin-top: 32px;
     position: relative;
+    padding: 0;
     /*margin-bottom: 64px;*/
 }
 

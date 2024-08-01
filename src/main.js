@@ -1,6 +1,8 @@
 //Header
 import { openModalWindow, closeModalWindow, NavvMenu, linkToFooter, NavMenu } from './js/header.js';
-const burgerOpen = document.querySelector('.menu-button');
+const burgermenu = document.querySelector('.menu-button');
+burgermenu.addEventListener('click', openModalWindow);
+const burgerOpen = document.querySelector('.open-burger');
 burgerOpen.addEventListener('click', openModalWindow);
 const btnClose = document.querySelector('.close-btn');
 btnClose.addEventListener('click', closeModalWindow);
