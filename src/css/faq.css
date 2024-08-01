@@ -98,12 +98,6 @@
 
 @media screen and (min-width: 1440px) {
   .faq-accordion-container{
-    /*display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;*/
-    /*columns: 2;
-    align-content:center;
-    justify-content:flex-end;*/
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: auto auto auto;
