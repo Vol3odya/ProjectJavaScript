@@ -85,9 +85,18 @@ export function NavMenu(evt) {
     //const menuItm = document.querySelectorAll('.custom-list .menu-list-item a');
     //const check = document.getElementById('menu-toggle');
 
-    //menuItm.forEach(item => {
-        //item.addEventListener('click', () => {
-            //check.checked = false;
-        //});
-    //});
-//});
+
+    menuItm.forEach(item => {
+        item.addEventListener('click', () => {
+            check.checked = false;
+        });
+    });
+});
+
+
+document.addEventListener('click', function (event) {
+    if (!modalMenu.contains(event.target) && !burgerOpen.contains(event.target)) {
+        closeModalWindow();
+    }
+});
+
