@@ -91,7 +91,6 @@ export function NavMenu(evt) {
             check.checked = false;
         });
     });
-});
 
 
 
