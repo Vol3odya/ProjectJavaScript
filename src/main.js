@@ -24,11 +24,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 document.addEventListener('click', function (event) {
-    if (!modalMenu.contains(event.target) && !burgerOpen.contains(event.target)) {
+    if (!modalMenu.contains(event.target) && !burgerOpen.contains(event.target) &&!document.querySelector(".container").contains(event.target)) {
         closeModalWindow();
+        if (document.querySelector('.is-open-header') ) {
+            modalMenu.classList.remove('is-open-header');
+        }
+        console.log("sdvd");
     }
 });
+
+//document.addEventListener('click', function (event) {
+    //if (!modalMenu.contains(event.target) && !document.querySelector('.is-open-header')) {
+        //modalMenu.classList.remove('is-open-header');
+        //burgerOpen.style.opacity = '';
+        //modalClsBody.style.opacity = '';
+    //}
+//});
+
 
 //Aboutme
 import { aboutme, aboutSwiper } from './js/aboutme.js';
