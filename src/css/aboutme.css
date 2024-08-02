@@ -14,14 +14,14 @@ ul, li {
   margin: 0;
 }
 
-.ac-list .my-header {
+/*.ac-list .my-header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .ac-list .my-text .faq-ac-text {
   margin-bottom: 20px;
-}
+}*/
 
 @media screen/*and (min-width: 320px)*/and (max-width: 374.9px) {
 .aboutme {
