@@ -1,11 +1,12 @@
 .hero {
   position: relative;
 
-  background-image: url(../img/hero/hero_red_1x-min.png);
+  background-image: url(../img/hero/mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 
 .hero_container {
   display: flex;
@@ -53,6 +54,7 @@
 }
 
 @media screen and (min-width: 375px) {
+
   .social_media {
     flex-wrap: nowrap;
   }
@@ -62,6 +64,12 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .hero {
+  
+    background-image: url(../img/hero/tab.jpg);
+  }
+
   .headline {
      margin-top: 300px;
      margin-bottom: 187px;
@@ -75,6 +83,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+  .hero {
+  
+    background-image: url(../img/hero/hero_red_1x-min.jpg);
+  }
   .headline {
     margin-bottom: 243px;
     width: 1084px;
