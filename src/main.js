@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('click', function (event) {
+    if (!modalMenu.contains(event.target) && !burgerOpen.contains(event.target)) {
+        closeModalWindow();
+    }
+});
 
 //Aboutme
 import { aboutme, aboutSwiper } from './js/aboutme.js';
