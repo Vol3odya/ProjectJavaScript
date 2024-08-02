@@ -1,36 +1,52 @@
-const modalOverlay = document.getElementById('.modal-overlay');
-const burgerOpen = document.getElementById('.open-burger');
-const btnClose = document.getElementById('.close-btn');
-const mobileOrderBtn = document.getElementById('.order-mobile');
-const navList = document.getElementById('.nav-list');
-const modalClsBody = document.getElementById('body');
+const modalOverlay = document.querySelector('.modal-overlay');
+const burgerOpen = document.querySelector('.open-burger');
+const btnClose = document.querySelector('.close-btn');
+const mobileOrderBtn = document.querySelector('.order-mobile');
+const navList = document.querySelector('.nav-list');
+const modalClsBody = document.querySelector('body');
+const modalMenu = document.querySelector('.menu-list');
 
 
-burgerOpen.addEventListener('click', openModalWindow);
 
-function openModalWindow() {
-    modalOverlay.classList.add('is-open');
-    burgerOpen.style.opacity = '';
+//burgerOpen.addEventListener('click', openModalWindow);
+
+export function openModalWindow() {
+    modalOverlay.classList.add('is-open-header');
+    burgerOpen.style.opacity = 'none';
     modalClsBody.style.overflow = '';
+    //document.body.style.overflow = 'hidden';
 }
 
-btnClose.addEventListener('click', closeModalWindow);
 
-function closeModalWindow() {
-    modalOverlay.classList.remove('is-open');
+export function openMenu() {
+    if (document.querySelector('.is-open-header') ) {
+        modalMenu.classList.remove('is-open-header');
+    }
+    else {
+        modalMenu.classList.add('is-open-header');
+    }
+    
+    //burgerOpen.style.opacity = 'none';
+    //modalClsBody.style.overflow = '';
+    //document.body.style.overflow = 'hidden';
+}
+//btnClose.addEventListener('click', closeModalWindow);
+
+export function closeModalWindow() {
+    modalOverlay.classList.remove('is-open-header');
     burgerOpen.style.opacity = '';
     modalClsBody.style.opacity = '';
 }
 
-navList.addEventListener('click', NavvMenu);
+//navList.addEventListener('click', NavvMenu);
 
-function NavvMenu(evt) {
+export function NavvMenu(evt) {
     evt.preventDefault();
     if (evt.target !== evt.currentTarget) {
         return;
     }
     else {
-        modalOverlay.classList.remove('is-open');
+        modalOverlay.classList.remove('is-open-header');
         burgerOpen.style.opacity = '';
         modalClsBody.style.overflow = '';
     }
@@ -38,9 +54,9 @@ function NavvMenu(evt) {
 
 mobileOrderBtn.addEventListener('click', linkToFooter);
 
-function linkToFooter(evt) {
+export function linkToFooter(evt) {
     evt.preventDefault();
-    modalOverlay.classList.remove('is-open');
+    modalOverlay.classList.remove('is-open-header');
     burgerOpen.style.opacity = '';
     modalClsBody.style.overflow = '';
 
@@ -49,11 +65,11 @@ setTimeout(() => {
 }, 100);
 }
 
-navList.addEventListener('click', NavMenu);
+//navList.addEventListener('click', NavMenu);
 
-function NavMenu(evt) {
+export function NavMenu(evt) {
     if (evt.target.tagName === 'A') {
-        modalOverlay.classList.remove('is-open');
+        modalOverlay.classList.remove('is-open-header');
         burgerOpen.style.opacity ='';
         modalClsBody.style.overflow = '';
 
@@ -65,9 +81,10 @@ function NavMenu(evt) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuItm = document.querySelectorAll('.custom-list .menu-list-item a');
-    const check = document.getElementById('menu-toggle');
+//document.addEventListener('DOMContentLoaded', function () {
+    //const menuItm = document.querySelectorAll('.custom-list .menu-list-item a');
+    //const check = document.getElementById('menu-toggle');
+
 
     menuItm.forEach(item => {
         item.addEventListener('click', () => {
@@ -82,3 +99,4 @@ document.addEventListener('click', function (event) {
         closeModalWindow();
     }
 });
+

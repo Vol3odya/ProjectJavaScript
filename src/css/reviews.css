@@ -1,0 +1,132 @@
+.reviews {
+  padding: 64px 0;
+  background-color: #1C1D20;
+}
+
+.reviews-items {
+  width: 288px;
+  height: 376px;
+  padding: 32px 24px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+}
+
+.reviews-title {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.reviews-img {
+  border-radius: 10px;
+  min-width: 48px;
+  height: 48px;
+  background: #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.review-author {
+  min-width: 240px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.review-text {
+  min-width: 240px;
+  min-height: 120px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.reviews-wrap {
+  width: 156px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.review-button-prev,
+.review-button-next {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px;
+  width: 52px;
+  height: 52px;
+  margin-inline: 12px;
+  margin-top: 32px;
+}
+
+.review-button-prev:after {
+  content: url("../img/reviews/arrow-narrow-left.svg");
+}
+
+.review-button-next:after {
+  content: url("../img/reviews/arrow-narrow-right.svg");
+}
+
+:root {
+  --swiper-navigation-size: 24px;
+  --swiper-theme-color: #fafafa;
+  top: 0;
+}
+
+@media screen and (min-width: 375px) {
+
+.reviews-items {
+    width: 343px;
+    height: 328px;
+ }
+.review-button-prev,
+.review-button-next {
+  width: 68px;
+  height: 68px;
+}
+
+.review-button-prev {
+  margin-left: -10px;
+}
+
+.review-button-next {
+  margin-right: -10px;
+}
+
+:root {
+  --swiper-navigation-size: 32px;
+}
+
+.review-text {
+  min-width: 284px;
+}
+
+.review-button-prev {
+  margin-left: -10px;
+}
+
+.review-button-next {
+  margin-right: -10px;
+}
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 96px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews {
+    padding: 164px 0;
+  }
+.reviews-items {
+    width: 332px;
+    height: 328px;
+  }
+}
