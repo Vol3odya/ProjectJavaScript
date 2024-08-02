@@ -11,6 +11,7 @@ navList.addEventListener('click', NavvMenu);
 const mobileOrderBtn = document.querySelector('.order-mobile');
 mobileOrderBtn.addEventListener('click', linkToFooter);
 navList.addEventListener('click', NavMenu);
+const modalMenu = document.querySelector('.menu-list');
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuItm = document.querySelectorAll('.custom-list .menu-list-item a');
