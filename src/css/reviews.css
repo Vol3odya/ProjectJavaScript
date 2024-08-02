@@ -86,19 +86,14 @@
     width: 343px;
     height: 328px;
  }
-.review-button-prev,
-.review-button-next {
-  width: 68px;
-  height: 68px;
-}
 
-.review-button-prev {
+/*.review-button-prev {
   margin-left: -10px;
 }
 
 .review-button-next {
   margin-right: -10px;
-}
+}*/
 
 :root {
   --swiper-navigation-size: 32px;
@@ -108,18 +103,31 @@
   min-width: 284px;
 }
 
-.review-button-prev {
+/*.review-button-prev {
   margin-left: -10px;
 }
 
 .review-button-next {
   margin-right: -10px;
-}
+}*/
 }
 @media screen and (min-width: 768px) {
   .reviews {
     padding: 96px 0;
   }
+    .review-button-prev,
+    .review-button-next {
+      width: 68px;
+      height: 68px;
+    }
+
+        .review-button-prev {
+          margin-left: -10px;
+        }
+    
+        .review-button-next {
+          margin-right: -10px;
+        }
 }
 @media screen and (min-width: 1440px) {
   .reviews {
