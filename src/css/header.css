@@ -64,24 +64,36 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   text-decoration-skip-ink: none;
   color: #fafafa;
   background: none;
   border: none;
   padding: 0;
-  text-decoration: underline;
   margin-top: 10px; 
+}
+
+.man-button::after{
+  content: '';
+  border-radius: 1px;
+  width: 40px;
+  height: 1px;
+  background: #fafafa;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 45px;
 }
 
 .menu-list {
   list-style: none;
   display: block;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%) scaleY(0);
+  transform: translateX(-50%);
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease, transform 0.3s ease;
   background-color: transparent;
   padding: 0;
@@ -92,7 +104,63 @@
 }
 
 .menu-list-item {
-  padding: 5px;
+  padding: 0;
+}
+
+.manu-list-seca::after{
+  content: '';
+  border-radius: 1px;
+  /*width: 100%;*/
+  height: 1px;
+  background: #fafafa;
+  display: flex;
+  margin-top: -3px;
+  /*position: absolute;*/
+  left: 0;
+  bottom: 45px;
+}
+
+.manu-list-secb::after {
+  content: '';
+  border-radius: 1px;
+  width: 56px;
+  height: 1px;
+  background: #fafafa;
+  display: flex;
+  margin-top: -3px;
+  margin-left: auto;
+  margin-right: auto;
+  /*position: absolute;*/
+  left: 0;
+  bottom: 45px;
+}
+.manu-list-secc::after {
+  content: '';
+    border-radius: 1px;
+    width: 56px;
+    height: 1px;
+    background: #fafafa;
+    display: flex;
+    margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: absolute;*/
+    left: 0;
+    bottom: 45px;
+}
+.manu-list-secd::after {
+  content: '';
+    border-radius: 1px;
+    width: 30px;
+    height: 1px;
+    background: #fafafa;
+    display: flex;
+    margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: absolute;*/
+    left: 0;
+    bottom: 45px;
 }
 
 .menu-list-item a {
@@ -139,7 +207,7 @@
   left: 0;
   right: 0;
   /*transform: translate(-50%, -50%);*/
-  background-image: url(../img/hero/hero_iceberg_1x-min.png);
+  background-image: url(../img/hero/hero_red_1x-min.png);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -257,9 +325,9 @@
           margin: 0 auto;
   }
 
-  .menu-list-item{
+  /*.menu-list-item{
       padding-bottom: 7px;
-  }
+  }*/
 
 
   .order-btn {

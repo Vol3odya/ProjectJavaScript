@@ -21,7 +21,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 1);
-  margin-top: 169px;
+  margin-top: 281px;
 }
 
 .social_media {
@@ -63,16 +63,26 @@
 
 @media screen and (min-width: 768px) {
   .headline {
-    /* padding-top: 300px; */
+     margin-top: 300px;
+     margin-bottom: 187px;
 
     font-size: 90px;
   }
+
+    .hero_container {
+      height: 1024px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
   .headline {
     margin-bottom: 243px;
-    padding-left: 178;
-    padding-right: 178px;
+    margin-left: auto;
+    margin-right: auto;
   }
+    
+      .hero_container {
+        height: 1024px;
+      }
+  
 }

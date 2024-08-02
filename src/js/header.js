@@ -4,6 +4,8 @@ const btnClose = document.querySelector('.close-btn');
 const mobileOrderBtn = document.querySelector('.order-mobile');
 const navList = document.querySelector('.nav-list');
 const modalClsBody = document.querySelector('body');
+const modalMenu = document.querySelector('.menu-list');
+
 
 
 //burgerOpen.addEventListener('click', openModalWindow);
@@ -15,6 +17,19 @@ export function openModalWindow() {
     //document.body.style.overflow = 'hidden';
 }
 
+
+export function openMenu() {
+    if (document.querySelector('.is-open-header') ) {
+        modalMenu.classList.remove('is-open-header');
+    }
+    else {
+        modalMenu.classList.add('is-open-header');
+    }
+    
+    //burgerOpen.style.opacity = 'none';
+    //modalClsBody.style.overflow = '';
+    //document.body.style.overflow = 'hidden';
+}
 //btnClose.addEventListener('click', closeModalWindow);
 
 export function closeModalWindow() {

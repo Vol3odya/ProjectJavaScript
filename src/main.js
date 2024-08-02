@@ -1,7 +1,7 @@
 //Header
-import { openModalWindow, closeModalWindow, NavvMenu, linkToFooter, NavMenu } from './js/header.js';
+import { openModalWindow, closeModalWindow, NavvMenu, linkToFooter, NavMenu, openMenu } from './js/header.js';
 const burgermenu = document.querySelector('.menu-button');
-burgermenu.addEventListener('click', openModalWindow);
+burgermenu.addEventListener('click', openMenu);
 const burgerOpen = document.querySelector('.open-burger');
 burgerOpen.addEventListener('click', openModalWindow);
 const btnClose = document.querySelector('.close-btn');
@@ -14,7 +14,7 @@ navList.addEventListener('click', NavMenu);
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuItm = document.querySelectorAll('.custom-list .menu-list-item a');
-    const check = document.getElementById('menu-toggle');
+    const check = document.getElementById('#menu-toggle');
 
     menuItm.forEach(item => {
         item.addEventListener('click', () => {

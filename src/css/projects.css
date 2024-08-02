@@ -195,6 +195,11 @@ body {
         height: 1191px;
     }*/
 
+        .projects {
+            /*position: absolute;*/
+            margin-top: 96px;
+        }
+
     .project-wrap {
         height: 68px;
     }
