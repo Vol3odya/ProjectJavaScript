@@ -141,6 +141,7 @@ ul, li {
         }
     
         .my-button {
+          margin-top: 20px;
           font-weight: 600;
           font-size: 16px;
           line-height: 150%;
@@ -351,6 +352,7 @@ ul, li {
 }
 
 .my-button {
+  margin-top: 20px;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
@@ -550,6 +552,7 @@ text-align: left;
     }
   
     .my-button {
+      margin-top: 20px;
       font-weight: 600;
       font-size: 16px;
       line-height: 150%;
@@ -728,6 +731,7 @@ text-align: left;
   }
 
     .my-button {
+      margin-top: 20px;
       font-weight: 600;
       font-size: 16px;
       line-height: 150%;
