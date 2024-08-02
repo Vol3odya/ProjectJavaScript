@@ -31,6 +31,7 @@ ul, li {
       top: 876px;
       /*left: 16px;*/
       gap: 32px;
+      object-fit: cover;
     }
   
     .about-list {
