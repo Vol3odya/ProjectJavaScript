@@ -86,11 +86,11 @@ export function NavMenu(evt) {
     //const check = document.getElementById('menu-toggle');
 
 
-    menuItm.forEach(item => {
-        item.addEventListener('click', () => {
-            check.checked = false;
-        });
-    });
+    // menuItm.forEach(item => {
+    //     item.addEventListener('click', () => {
+    //         check.checked = false;
+    //     });
+    // });
 
 
 
