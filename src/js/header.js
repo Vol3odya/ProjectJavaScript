@@ -94,9 +94,5 @@ export function NavMenu(evt) {
 });
 
 
-document.addEventListener('click', function (event) {
-    if (!modalMenu.contains(event.target) && !burgerOpen.contains(event.target)) {
-        closeModalWindow();
-    }
-});
+
 
